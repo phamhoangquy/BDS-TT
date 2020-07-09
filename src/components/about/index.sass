@@ -1,0 +1,324 @@
+.banner-about
+	.card-img
+		.img
+			width: 100%
+			height: 400px
+			img 
+				width: 100%
+				height: 100%
+				object-fit: cover
+
+@media (max-width: 576px )
+	.banner-contact
+		.card-img
+			.img
+				width: 100%
+				height: 300px
+				img 
+					width: 100%
+					height: 100%
+					object-fit: cover
+@media (max-width: 1024px )
+	.banner-contact
+		.card-img
+			.img
+				width: 100%
+				height: 300px
+				img 
+					width: 100%
+					height: 100%
+					object-fit: cover
+.about
+	padding-bottom: 60px
+	.head-title
+		padding: 70px 0 35px 0
+		@media screen and ( max-width: 576px )
+			padding-top: 30px
+		h2
+			font-size: 48px
+		@media screen and ( max-width: 1024px )
+			font-size: 28px
+		@media screen and ( max-width: 576px )
+			h2
+				font-size: 26px
+		&.line
+			padding-left: 90px
+			position: relative
+			&::before
+				content: ''
+				width: 71px
+				height: 1px
+				background: #c80916
+				position: absolute
+				top: 60%
+				transform: translateY(-50%)
+				left: 0
+				@media screen and ( max-width:1024px )
+					top: 25%
+				@media screen and ( max-width:992px )
+					top: 60%
+				@media screen and ( max-width:767px )
+					top: 60%
+				@media screen and ( max-width:576px )
+					top: 50%
+	.block_list
+		padding-top: 67px
+		@media screen and ( max-width: 576px)
+			padding-top: 30px
+		@media screen and ( max-width: 1024px)
+			padding-top: 30px
+		ul 
+			list-style: none
+			display: flex
+			padding: 10px 60px
+			li 
+				margin-right: auto
+				position: relative
+				&::after 
+					content: ''
+					position: absolute
+					top: 0
+					left: 0
+					width: 2px
+					height: 100%
+				
+				h3
+					color: #c80916
+					span
+						font-size: 36px
+						
+				span 
+					font-size: 14px
+					font-weight: 600
+	.content
+		p 
+			text-align: justify
+
+// section vision & mission
+.vision-mission
+	background-image: url('../img/about/bg-vision&mission.jpg')
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+	.head-title
+		padding: 85px 0 0 0
+		h2 
+			font-size: 48px
+		@media screen and ( max-width: 1024px )
+			font-size: 30px
+			padding: 30px 0 30px 0
+		@media screen and ( max-width: 576px )
+			padding: 30px 0 30px 0
+			h2 
+				font-size: 30px
+		&.line
+			padding-left: 90px
+			position: relative
+			&::before
+				content: ''
+				width: 71px
+				height: 1px
+				background: #c80916
+				position: absolute
+				top: 80%
+				transform: translateY(-50%)
+				left: 0
+				@media screen and ( max-width:1024px )
+					top: 50%
+	.card_img
+		padding: 35px 0 20px 0
+		@media screen and ( max-width: 576px )
+			display: flex
+			align-items: center
+			justify-content: center
+		.img 
+			width: 70px
+			height: 60px
+	.content
+		h4 
+			padding-bottom: 30px
+			@media screen and ( max-width: 576px )
+				text-align: center
+		ul
+			padding: 0
+			list-style: none
+			text-align: justify
+			li 
+				display: flex
+				em 
+					font-size: 12px
+				p 
+					padding-left: 15px
+					padding-bottom: 20px
+
+// section value
+.value
+	padding-bottom: 60px
+	.head-title
+		padding: 66px 0 0 0
+		@media screen and ( max-width: 576px )
+			padding: 30px 0 0 0
+		h2 
+			font-size: 48px
+		@media screen and ( max-width: 1024px )
+			h2
+				font-size: 30px
+				padding: 0 0 30px 0
+				text-align: center
+		@media screen and ( max-width: 576px )
+			h2 
+				font-size: 26px
+				padding: 0
+		&.line
+			padding-left: 90px
+			position: relative
+			&::before
+				content: ''
+				width: 71px
+				height: 1px
+				background: #c80916
+				position: absolute
+				top: 80%
+				transform: translateY(-50%)
+				left: 0
+				@media screen and ( max-width:1024px )
+					top: 60%
+					left: 30%
+				@media screen and ( max-width:576px )
+					top: 70%
+					left: 10%
+	.content 
+		background-color: rgb(255, 255, 255)
+		box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.1)
+		// left: 765px
+		// top: 2171px
+		width: 390px
+		height: 220px
+		z-index: 96
+		display: flex
+		justify-content: center
+		align-items: center
+		@media screen and ( max-width: 1024px )
+			width: 100%
+		@media screen and ( max-width: 576px )
+			width: 100%
+		ul 
+			list-style: none
+			li 
+				p
+					&:nth-child(1)
+						text-align: center
+						font-size: 18px
+
+// section prize
+.prize
+	background-image: url('../img/about/bg-prize.png')
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+	.head-title
+		padding: 66px 0 0 0
+		h2 
+			font-size: 48px
+			color: #ffffff
+		@media screen and ( max-width: 1024px )
+			font-size: 30px
+			padding: 30px 0 30px 0
+			text-align: center
+		@media screen and ( max-width: 576px )
+			padding: 30px 0 30px 0
+			h2 
+				font-size: 30px
+		&.line
+			padding-left: 90px
+			position: relative
+			&::before
+				content: ''
+				width: 71px
+				height: 1px
+				background: #ffffff
+				position: absolute
+				top: 80%
+				transform: translateY(-50%)
+				left: 0
+				@media screen and ( max-width:1024px )
+					top: 50%
+					left: 25%
+	.text
+		color: #ffffff
+		padding: 0 0 70px 0
+		@media screen and ( max-width:576px)
+			text-align: center
+	.card_img 
+		display: flex
+		align-items: center
+		justify-content: center
+	.caption
+		padding-top: 40px
+		@media screen and ( max-width: 576px )
+			padding-bottom: 30px
+		@media screen and ( max-width: 1024px )
+			padding-bottom: 30px
+		p 
+			color: #ffffff
+			text-align: center
+
+// section choose-tan-thinh
+.choose-tan-thinh
+	padding-bottom: 80px
+	.head-title
+		padding: 66px 0 0 0
+		h2 
+			font-size: 48px
+			color: #333333
+		@media screen and ( max-width: 1024px )
+			font-size: 28px
+			padding: 30px 0 30px 0
+		@media screen and ( max-width: 576px )
+			padding: 30px 0 30px 0
+			h2 
+				font-size: 26px
+		&.line
+			padding-left: 90px
+			position: relative
+			&::before
+				content: ''
+				width: 71px
+				height: 1px
+				background: #c80916
+				position: absolute
+				top: 80%
+				transform: translateY(-50%)
+				left: 0
+				@media screen and ( max-width:1024px )
+					top: 50%
+	.background
+		position: relative
+		.img 
+			position: absolute;
+			top: 100px;
+			left: -100px;
+			pointer-events: none;
+	.content
+		padding-top: 90px
+		@media screen and ( max-width:576px)
+			padding: 30px 0 0 0
+		ul 
+			list-style: none
+			padding: 0
+			text-align: justify
+			li 
+				display: flex
+				padding-bottom: 35px
+				em 
+					font-size: 12px
+				p 
+					padding-left: 15px
+	.card_img 
+		padding-top: 30px
+		.img 
+			width: 100%
+			img 
+				width: 100%
+
+

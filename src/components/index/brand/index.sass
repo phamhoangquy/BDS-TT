@@ -1,0 +1,96 @@
+.brand-display
+    background-image: url('../img/home/brand/bg-brand.png')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    margin: 100px 0 0 0
+    .head-title
+        display: flex
+        padding: 80px 0 50px 0
+        h2
+            font-size: 48px
+        @media screen and ( max-width: 576px )
+            padding: 30px 0 30px 0
+            h2
+                font-size: 30px
+            
+        &.line
+            padding-left: 90px
+            position: relative
+            &::before
+                content: ''
+                width: 71px
+                height: 1px
+                background: #c80916
+                position: absolute
+                top: 57%
+                transform: translateY(-50%)
+                left: 0
+                @media screen and ( max-width:1024px )
+                    top: 58%
+                @media screen and ( max-width:576px )
+                    top: 52%
+    .brand-swiper-wrapper
+        position: relative
+    .nav-arrow-prev,.nav-arrow-next
+        position: absolute
+        width: 40px
+        height: 40px
+        top: 20%
+        display: flex
+        justify-content: center
+        align-items: center
+        transition: .3s all  ease-in-out
+        @media screen and ( max-width: 400px )
+            top: 40%
+        &:hover,&:focus
+            em
+                color: #ffffff
+        em
+            transition: .3s all  ease-in-out
+            font-size: 18px
+    .nav-arrow-next
+        right: -60px
+        @media screen and ( max-width: 1439px)
+            right: -45px
+        @media screen and ( max-width: 1350px)
+            right: 0
+            
+        @media screen and ( max-width: 767px)
+            right: 15px
+        @media screen and ( max-width: 576px)
+            right: 0
+            top: 40px
+            
+    .nav-arrow-prev
+        left: -60px
+        @media screen and ( max-width: 1439px)
+            left: -45px
+        @media screen and ( max-width: 1350px)
+            left: 0
+        @media screen and ( max-width: 767px)
+            left: 15px
+        @media screen and ( max-width: 576px)
+            left: 0
+            top: 40px
+    .swiper-container
+        margin: 0
+        @media screen and ( max-width: 1350px)
+            margin: 0 50px
+    .swiper-wrapper
+        padding-bottom: 100px
+        .swiper-slide
+            height: auto
+            background: #ffffff
+            .wrapper
+                height: 100%
+                border: 1px solid #e1e1e1
+                a
+                    height: 120px
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    img
+                        max-width: 100%
+                        height: auto
+                        max-height: 100px

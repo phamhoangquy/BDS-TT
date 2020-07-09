@@ -1,0 +1,150 @@
+.banner-contact
+	.card-img
+		.img
+			width: 100%
+			height: 400px
+			img 
+				width: 100%
+				height: 100%
+				object-fit: cover
+
+@media (max-width: 576px )
+	.banner-contact
+		.card-img
+			.img
+				width: 100%
+				height: 300px
+				img 
+					width: 100%
+					height: 100%
+
+@media (max-width: 1024px )
+	.banner-contact
+		.card-img
+			.img
+				width: 100%
+				height: 300px
+				img 
+					width: 100%
+					height: 100%
+
+.contact-form
+	padding-bottom: 62px
+	.head-title
+		padding: 70px 0 30px 0
+		h2
+			font-size: 48px
+		@media screen and ( max-width: 1024px )
+			font-size: 30px
+		@media screen and ( max-width: 576px )
+			padding: 30px 0 30px 0
+			h2 
+				font-size: 26px
+		&.line
+			padding-left: 90px
+			position: relative
+			&::before
+				content: ''
+				width: 71px
+				height: 1px
+				background: #c80916
+				position: absolute
+				top: 65%
+				transform: translateY(-50%)
+				left: 0
+				@media screen and ( max-width:1024px )
+					top: 25%
+				@media screen and ( max-width:576px )
+					top: 50%
+	.left
+		background: #e6efe9
+		.logo
+			display: flex
+			align-items: center
+			justify-content: center
+			padding: 60px 0 30px 0
+		.title
+			h3
+				font-size: 16px
+				color: #c80916
+				font-weight: 600
+				padding: 0 60px 35px 80px
+		.card-body
+			ul 
+				padding: 0
+				list-style: none
+				li
+					display: flex
+					padding: 0 60px 20px 80px
+					em 
+						color: #c80916 
+					p
+						font-size: 16px
+						color: #5c5c5c
+						padding-left: 10px
+	.text
+		padding-bottom: 20px
+		@media screen and ( max-width: 576px )
+			padding-top: 30px
+	.wrap-form
+		@media screen and(max-width:1025px)
+			margin: 0
+			padding: 0 10px
+		.frm-btnwrap
+			float: right
+			text-align: right
+			@media screen and(max-width:1025px)
+				margin: 0 !important
+			@media screen and(max-width:767px)
+				position: static
+				display: block
+			.frm-btn
+				input
+					width: 215px
+					height: 40px
+					color: #ffffff
+					background: #c80916
+					cursor: pointer
+					font-size: 16px
+					font-weight: 400
+					text-align: center
+					border: none
+					margin-right: 10px
+					&:nth-last-child(2)
+						display: none
+					@media screen and ( max-width:1024px  )
+						input 
+							padding: 0 15px
+		.form-group
+			margin: 5px 0 20px 0
+			span
+				color: #b2b2b2
+				font-size: 13px
+				&.fa-exclamation-triangle
+					color: firebrick
+			@media screen and(max-width:1025px)
+				padding: 0 0
+			input,textarea
+				padding-left: 20px
+				border: 1px solid #f3f3f3
+				height: 42px
+				width: 100%
+				color: #333
+				background: #f3f3f3
+				transition: .3s all ease-in-out
+
+				&:focus
+					outline: none
+					box-shadow: 0px 5px 15px 0px rgba(56, 50, 44, 0.15)
+			label
+				color: #666666
+				font-size: 14px
+				font-weight: 400
+				margin-bottom: 5px
+			textarea
+				height: 8em
+				padding: 10px 0 0 20px
+
+.map 
+	.map-wrapper
+		padding-bottom: 80px

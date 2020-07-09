@@ -1,0 +1,86 @@
+.about-us
+    padding: 100px 0 100px 0
+    
+    @media screen and ( max-width: 576px )
+        padding-top: 30px
+    .head-title
+        padding: 0 0 50px 0
+        h2
+            font-size: 48px
+        @media screen and ( max-width: 1024px )
+            font-size: 30px
+        @media screen and ( max-width: 576px )
+            h2
+                font-size: 30px
+        &.line
+            padding-left: 90px
+            position: relative
+            &::before
+                content: ''
+                width: 71px
+                height: 1px
+                background: #c80916
+                position: absolute
+                top: 30%
+                transform: translateY(-50%)
+                left: 0
+                @media screen and ( max-width:1024px )
+                    top: 25%
+    .background
+        position: relative
+        .img 
+            position: absolute;
+            top: 40px;
+            left: -80px;
+            pointer-events: none;
+    .content
+        p
+            text-align: justify
+            color: #0b6528
+            font-size: 1rem
+    .block_list
+        padding-top: 67px
+        @media screen and ( max-width: 576px)
+            padding-top: 30px
+        @media screen and ( max-width: 1024px)
+            padding-top: 30px
+        ul 
+            list-style: none
+            display: flex
+            padding: 0
+            li 
+                margin-right: auto
+                position: relative
+                &::after 
+                    content: ''
+                    position: absolute
+                    top: 0
+                    left: 0
+                    width: 2px
+                    height: 100%
+                
+                h3
+                    color: #c80916
+                    span
+                        font-size: 36px
+
+                span 
+                    font-size: 14px
+                    text-align: left
+                    font-weight: 600
+	
+    .card_img 
+        .img
+            height: 390px
+            img 
+                width: 100%
+                height: 100%
+@media screen and ( max-width: 576px )
+    .about-us
+        .card_img
+            padding-top: 30px
+@media screen and ( max-width: 1024px )
+    .about-us
+        .card_img
+            padding-top: 30px
+                

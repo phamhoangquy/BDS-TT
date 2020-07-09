@@ -1,0 +1,82 @@
+.video-active
+	padding: 60px 0 0 0
+	.head-title
+		display: flex
+		justify-content: space-between
+		h2
+			font-size: 48px
+		@media screen and ( max-width: 576px )
+			h2
+				font-size: 26px
+		@media screen and ( max-width: 1024px )
+			h2
+				font-size: 28px
+		&.line
+			padding-left: 90px
+			position: relative
+			&::before
+				content: ''
+				width: 71px
+				height: 1px
+				background: #c80916
+				position: absolute
+				top: 50%
+				transform: translateY(-50%)
+				left: 0
+				@media screen and ( max-width:1024px )
+					top: 65%
+				@media screen and ( max-width:576px )
+					top: 70%
+	.title
+		padding: 30px 0 0 0
+		ul 
+			list-style: none
+			padding: 0
+			li 
+				display: flex
+				a 
+					padding-right: 20px
+					font-size: 1rem
+					font-weight: 600
+					&:hover
+						color: #0b6227
+	.card_img_video
+		padding: 50px 0 0 0
+		cursor: pointer
+		position: relative
+		@media screen and ( max-width: 576px )
+			img
+				width: 100%
+				object-fit: cover
+		@media screen and ( max-width: 1200px )
+			img 
+				width: 100%
+				object-fit: cover
+		.video 
+			display: flex;
+			position: absolute;
+			top: 60%;
+			left: 35%;
+			align-items: center;
+			justify-content: center;
+			transform: translateY(-50%);
+			opacity: .8;
+			border-radius: 50%;
+			background: #fff;
+			width: 5.8rem;
+			height: 5.8rem;
+	.button
+		display: flex
+		align-items: center
+		justify-content: center
+		padding: 40px 0 80px 0
+		button
+			width: 40px
+			height: 40px
+			border: 1px solid #c80916
+			margin-left: 21px
+			background: #ffffff
+			color: #c80916
+			&:hover
+				background: #c80916
+				color: #ffffff
