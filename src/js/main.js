@@ -10,6 +10,7 @@ $(document).ready(function () {
 	setBackground();
 	coutingNumber();
 	tabActive();
+	hideTool();
 });
 
 //Check if windows size large then 1024 then these function will be execute
@@ -45,6 +46,16 @@ function tabActive() {
 		var display = $(this).attr("data-type");
 		$(".tab-item").removeClass("active");
 		$("#" + display).addClass("active");
+	});
+}
+
+function hideTool() {
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > 50) {
+			$("#block__tool").addClass("active");
+		} else {
+			$("#block__tool").removeClass("active");
+		}
 	});
 }
 
