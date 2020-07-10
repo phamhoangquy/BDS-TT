@@ -2,6 +2,8 @@ $(document).ready(function () {
 	newsHomeSlide();
 	swiperInit();
 	newsSlide();
+	locationProject();
+	newSuncity();
 	DataBG();
 	toggleMobileMenu();
 	mappingMenu();
@@ -210,7 +212,65 @@ function newsHomeSlide(){
 	});
 }
 
+function locationProject(){
+	var brandSwiper = new Swiper(".location-project .swiper-container", {
+		// Optional parameters
+		speed: 1000,
 
+		autoplay: {
+			delay: 2000
+		},
+		navigation: {
+			nextEl: '.location-project .nav-arrow-next',
+			prevEl: '.location-project .nav-arrow-prev',
+		},
+		// breakpointsInverse: true,
+		spaceBetween: 50,
+		breakpoints: {
+			320: {
+				slidesPerView: 1,
+			
+			},
+			480: {
+				slidesPerView: 1,
+				
+			},
+			768: {
+				slidesPerView: 1,
+			
+			},
+			1025: {
+				slidesPerView: 4,
+				
+			},
+			1200: {
+				slidesPerView: 4,
+			},
+			1440: {
+				slidesPerView: 4,
+			},
+			1600: {
+				slidesPerView: 4,
+			},
+		},
+
+	});
+}
+function newSuncity(){
+	var brandSwiper = new Swiper(".text-utilities .swiper-container", {
+		// Optional parameters
+		speed: 1000,
+
+		autoplay: {
+			delay: 2000
+		},
+		navigation: {
+			nextEl: '.text-utilities .nav-arrow-next',
+			prevEl: '.text-utilities .nav-arrow-prev',
+		},
+		// breakpointsInverse: true,
+	});
+}
 function toggleMobileMenu() {
 	$(".mobile-toggle").on("click", function () {
 		$(".mobile-wrapper").toggleClass("active");
