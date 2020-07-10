@@ -9,6 +9,7 @@ $(document).ready(function () {
 	mappingSearch();
 	setBackground();
 	coutingNumber();
+	tabActive();
 });
 
 //Check if windows size large then 1024 then these function will be execute
@@ -46,6 +47,7 @@ function tabActive() {
 		$("#" + display).addClass("active");
 	});
 }
+
 function swiperInit() {
 	var homerSwiper = new Swiper(".home-banner .swiper-container", {
 		// Optional parameters
