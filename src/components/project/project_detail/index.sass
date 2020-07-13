@@ -1,0 +1,268 @@
+.menu
+	.head-menu
+		display: flex
+		align-items: center
+		justify-content: center
+		border-bottom: 1px solid #f5f5f5
+		ul 
+			list-style: none
+			padding: 0
+			display: flex
+			li 
+				padding-right: 30px
+				a 
+					font-size: 18px
+					font-weight: 500
+					&:hover
+						color: #0b6528
+			@media screen and ( max-width:576px)
+				display: flex
+				align-items: center
+				justify-content: center
+				li 
+					text-align: center
+
+//section
+.project-news
+	padding: 65px 0 60px 0
+	.head-title
+		h2 
+			font-size: 24px
+			@media screen and ( max-width: 576px )
+				font-size: 20px
+	.card_img 
+		padding-top: 50px
+		// background-color: rgb(239, 255, 244)
+		.img 
+			width: 100%
+			img 
+				width: 100%
+			@media screen and ( max-width: 576px )
+				width: 100%
+	.title 
+		padding: 70px 0 0 0
+		h3 
+			color: #c80916
+	.content
+		p 
+			padding-bottom: 30px
+			text-align: justify
+	.content-2
+		padding-top: 100px
+		p 
+			text-align: justify
+
+//section
+.location-project
+	background-image: url('../img/project-detail/bg-project-detail.jpg')
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+	.title
+		padding-top: 65px
+		h3 
+			font-size: 24px
+			color: #ffffff
+			text-align: center
+	.caption
+		p 
+			text-align: center
+			color: #ffffff
+			padding-top: 30px
+	.location-silde
+		padding-top: 65px
+		.card
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: center
+			.card-body
+				width: 100px
+				height: 100px
+				border-radius: 50%
+				background: #ffffff
+				display: flex
+				align-items: center
+				justify-content: center
+				em 
+					font-size: 48px 
+					color: #c80916
+			.caption
+				padding-top: 30px
+				padding-bottom: 160px
+				@media screen and ( max-width:576px)
+					padding-bottom: 30px
+				@media screen and ( max-width:1024px)
+					padding-bottom: 30px
+				.text
+					text-align: center
+					color: #ffffff
+
+// section
+.project-suncity
+	padding-bottom: 60px
+	.content
+		padding-top: 130px
+		p 
+			text-align: justify
+
+
+// section
+.text-utilities
+	padding-top: 60px
+	background: #f9f9f9
+	.title
+		h3
+			text-align: center
+			color: #c80916
+			font-size: 18px
+			font-weight: 600
+		h4 
+			padding-top: 30px
+			font-size: 24px
+	.caption 
+		padding-top: 30px
+		padding-bottom: 30px
+		.text 
+			color: #333333
+			font-weight: 600
+			font-size: 18px
+			@media screen and ( max-width: 576px )
+				text-align: justify
+	.content 
+		padding-top: 30px
+		p 
+			@media screen and ( max-width:576px)
+				text-align: justify
+	.news-suncity
+		.card-body
+			.img 
+				width: 100%
+				img 
+					width: 100%
+		.news-swiper-wrapper
+			position: relative
+		.nav-arrow-prev,.nav-arrow-next
+			position: absolute
+			width: 40px
+			height: 40px
+			top: 150px
+			display: flex
+			justify-content: center
+			align-items: center
+			transition: .3s all  ease-in-out
+			@media screen and ( max-width: 400px )
+				top: 40%
+			&:hover,&:focus
+				em
+					color: #ffffff
+			em
+				transition: .3s all  ease-in-out
+				font-size: 18px
+		.nav-arrow-next
+			right: -160px
+			@media screen and ( max-width: 1439px)
+				right: -5px
+			@media screen and ( max-width: 1350px)
+				right: 0
+				
+			@media screen and ( max-width: 767px)
+				right: 15px
+			@media screen and ( max-width: 576px)
+				right: 0
+				top: 108px
+		.swiper-container
+			margin: 0
+			@media screen and ( max-width: 1350px)
+				margin: 0 50px
+		.swiper-wrapper
+			padding-bottom: 100px
+			@media screen and ( max-width: 576px )
+				padding-bottom: 0
+			.swiper-slide
+				height: auto
+				background: #ffffff
+				.wrapper
+					height: 100%
+					border: 1px solid #e1e1e1
+					a
+						height: 120px
+						display: flex
+						justify-content: center
+						align-items: center
+						img
+							max-width: 100%
+							height: auto
+							max-height: 100px
+
+// section
+.form-project-detail
+	padding: 60px 0 60px 0
+	.container
+		box-shadow: 0px 5px 15px 0px rgba(56, 50, 44, 0.15)
+	.title
+		h3 
+			text-align: center
+			padding: 60px 0 30px 0
+	.content
+		padding-bottom: 30px
+		p 
+			@media screen and ( max-width: 576px )
+				text-align: justify
+	.wrap-form
+		@media screen and(max-width:1025px)
+			margin: 0
+			padding: 0 10px
+		.frm-btnwrap
+			@media screen and(max-width:1025px)
+				margin: 0 !important
+			@media screen and(max-width:767px)
+				position: static
+				display: block
+			.frm-btn
+				padding-bottom: 60px
+				input
+					width: 215px
+					height: 40px
+					color: #ffffff
+					background: #c80916
+					cursor: pointer
+					font-size: 16px
+					font-weight: 400
+					text-align: center
+					border: none
+					margin-right: 10px
+					&:nth-last-child(2)
+						display: none
+					@media screen and ( max-width:1024px  )
+						input 
+							padding: 0 15px
+		.form-group
+			margin: 5px 0 20px 0
+			span
+				color: #b2b2b2
+				font-size: 13px
+				&.fa-exclamation-triangle
+					color: firebrick
+			@media screen and(max-width:1025px)
+				padding: 0 0
+			input,textarea
+				padding-left: 20px
+				border: 1px solid #f3f3f3
+				height: 42px
+				width: 100%
+				color: #333
+				background: #ffffff
+				transition: .3s all ease-in-out
+				&:focus
+					outline: none
+					box-shadow: 0px 5px 15px 0px rgba(56, 50, 44, 0.15)
+			label
+				color: #666666
+				font-size: 14px
+				font-weight: 400
+				margin-bottom: 5px
+			textarea
+				height: 8em
+				padding: 10px 0 0 20px
+
