@@ -29,11 +29,7 @@ if ($(window).width() > 1024) {
 	});
 }
 
-function DataBG() {
-	$('[data-bg]').each(function () {
-		$(this).addClass('data-bg lazyload')
-	})
-}
+
 
 function tabActive() {
 	$(".tab-navigation li a").on("click", function () {
@@ -58,6 +54,24 @@ function hideTool() {
 		} else {
 			$("#block__tool").removeClass("active");
 		}
+	});
+}
+
+function setBackground() {
+	$("[setBackground]").each(function () {
+		var background = $(this).attr("setBackground");
+		$(this).css({
+			"background-image": "url(" + background + ")",
+			"background-size": "cover",
+			"background-position": "center center",
+		});
+	});
+	$("[setBackgroundRepeat]").each(function () {
+		var background = $(this).attr("setBackgroundRepeat");
+		$(this).css({
+			"background-image": "url(" + background + ")",
+			"background-repeat": "repeat",
+		});
 	});
 }
 
@@ -163,6 +177,51 @@ function newsSlide(){
 			},
 		},
 
+	});
+	
+	var prizeSwiper = new Swiper(".prize .swiper-container", {
+		// Optional parameters
+		speed: 1000,
+	
+		autoplay: {
+			delay: 2000
+		},
+		navigation: {
+			nextEl: '.prize .nav-arrow-next',
+			prevEl: '.prize .nav-arrow-prev',
+		},
+		breakpointsInverse: true,
+		breakpoints: {
+			320: {
+				slidesPerView: 1,
+				spaceBetween: 100
+			},
+			400: {
+				slidesPerView: 1,
+				spaceBetween: 100
+			},
+			480: {
+				slidesPerView: 1,
+				spaceBetween: 100
+			},
+			768: {
+				slidesPerView: 2,
+				spaceBetween: 100
+			},
+			1025: {
+				slidesPerView: 4,
+				spaceBetween: 100
+			},
+			1440: {
+				slidesPerView: 6,
+				spaceBetween: 100
+			},
+			1600: {
+				slidesPerView: 6,
+				spaceBetween: 100
+			}
+		},
+	
 	});
 }
 
@@ -310,27 +369,8 @@ function mappingSearch() {
 	}).watch();
 }
 
-function setBackground() {
-	$("[setBackground]").each(function () {
-		var background = $(this).attr("setBackground");
-		$(this).css({
-			"background-image": "url(" + background + ")",
-			"background-size": "cover",
-			"background-position": "center center",
-		});
-	});
-	$("[setBackgroundRepeat]").each(function () {
-		var background = $(this).attr("setBackgroundRepeat");
-		$(this).css({
-			"background-image": "url(" + background + ")",
-			"background-repeat": "repeat",
-		});
-	});
-}
 
 function watchMoreDetail() {
-
-
 	let watchMore = $(".product-detail-wrapper .btn-view-more");
 	let article = $(".product-detail-wrapper  article");
 	let maxHeight = 400;
