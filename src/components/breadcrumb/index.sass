@@ -1,0 +1,77 @@
+.global-breadcrumb
+	width: 100%
+	position: absolute
+    z-index: 1
+    // margin-top: 360px
+    background: rgba(0,0,0,.6)
+    padding: 10px 0
+    height: 40px
+	@media screen and(max-width:500px)
+		display: none
+	ol
+		white-space: nowrap
+		padding: 0
+		list-style-type: none
+		margin-top: 360px
+		// background: rgba(0,0,0,.6)
+
+
+		li
+			display: inline-flex
+			font-size: 16px
+			line-height: 23px
+			padding-right: 30px
+			position: relative
+			&:after
+				font-size: 10px
+				font-family: "Linearicons-Free"
+				content: '\e876'
+				display: block
+				position: absolute
+				color: #ffffff
+				right: 5px
+				bottom: 2px
+			&.active
+			&:first-child
+				span
+					display: none
+				&:after
+					bottom: -5px
+				a
+					display: inline
+					width: 16px
+					position: relative
+					&:before
+						font-family: "Material Design Icons"
+						content: '\F2DC'
+						font-size: 20px
+						color: #ffffff
+						position: absolute
+						width: 1px
+						bottom: -5px
+						left: 0
+			&:last-child
+				&:after
+					display: none
+			&.active
+				color: #ffffff
+			a
+				text-decoration: none
+				font-size: 16px
+				line-height: 23px
+				color: #ffffff
+	@media screen and(max-width: 1200px)
+		padding: 10px 0
+		margin-bottom: 0
+	@media screen and(max-width: 768px)
+		margin-bottom: 0
+	@media screen and(max-width: 576px)
+		.breadcrumb
+			li
+				font-size: 14px
+				line-height: 22px
+				a
+					font-size: 13px
+					line-height: 22px
+					span
+						font-size: 13px
