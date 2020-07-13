@@ -38,7 +38,19 @@
 						</time>
 						<p>
 							<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
-						</p><a>Xem thêm</a><em class="mdi mdi-arrow-right"></em>
+						</p><a>
+
+
+							<xsl:attribute name="href">
+								<xsl:value-of select="Url"></xsl:value-of>
+							</xsl:attribute>
+							<xsl:attribute name="title">
+								<xsl:value-of select="Title"></xsl:value-of>
+							</xsl:attribute>
+
+
+							Xem thêm
+						</a><em class="mdi mdi-arrow-right"></em>
 					</div>
 				</a>
 			</div>
