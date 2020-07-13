@@ -5,6 +5,8 @@
     background-position: center
     .head-title
         padding: 85px 0 55px 0
+        display: flex
+        justify-content: space-between
         h2 
             font-size: 48px
         @media screen and ( max-width: 1024px )
@@ -12,8 +14,8 @@
             padding: 30px 0 30px 0
         @media screen and ( max-width: 576px )
             padding: 30px 0 30px 0
-            h2 
-                font-size: 30px
+            h2
+                font-size: 28px
         &.line
             padding-left: 90px
             position: relative
@@ -28,32 +30,29 @@
                 left: 0
                 @media screen and ( max-width:1024px )
                     top: 50%
-    .title
-        padding: 113px 0 50px 0
-        @media screen and ( max-width: 576px )
-            padding: 0
-        a 
-            font-size: 16px
-            padding-right: 30px
-            font-weight: 600
-            &:hover
-                color: #0b6227
-            &:nth-child(3)
-                font-size: 48px
-            &.line
-                padding-left: 90px
-                position: relative
-                &::before
-                    content: ''
-                    width: 71px
-                    height: 1px
-                    background: #c80916
-                    position: absolute
-                    top: 57%
-                    transform: translateY(-50%)
-                    left: 0
-                    @media screen and ( max-width:1024px )
-                        top: 50%
+        .tab-panels
+            display: flex
+            align-items: center
+            justify-content: center
+            ul 
+                list-style: none
+                padding: 0
+                display: flex
+                li 
+                    padding-right: 15px
+                    a 
+                        font-size: 16px
+                        font-weight: 500
+                        &:hover
+                            color: #0b6528
+                        @media screen and ( max-width: 576px )
+                            font-size: 12px
+
+    .card_img
+        .img 
+            img 
+                width: 100%
+
     .title_video.line
         padding: 85px 0 55px 0
         h2 
