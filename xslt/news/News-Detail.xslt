@@ -87,8 +87,8 @@
 					<h2>Tin tức liên quan</h2>
 				</div>
 				<div class="news-swiper-wrapper">
-					<div class="nav-arrow-prev"><img src="./img/home/brand/pre.png" alt="" /></div>
-					<div class="nav-arrow-next"><img src="./img/home/brand/next.png" alt="" /></div>
+				<div class="nav-arrow-prev"><img src="/Data/Sites/1/skins/default/img/home/brand/pre.png" alt="" /></div>
+				<div class="nav-arrow-next"><img src="/Data/Sites/1/skins/default/img/home/brand/next.png" alt="" /></div>
 				</div>
 				<div class="swiper-container">
 					<div class="swiper-wrapper">
