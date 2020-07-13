@@ -119,14 +119,8 @@
 
 	<xsl:template match="News" mode='News-2'>
 		<div class="card_img">
-			<div class="img"><img>
-				<xsl:attribute name="src">
-					<xsl:value-of select="ImageUrl"></xsl:value-of>
-				</xsl:attribute>
-				<xsl:attribute name="alt">
-					<xsl:value-of select="Title"></xsl:value-of>
-				</xsl:attribute>
-				</img>
+			<div class="img">
+				<xsl:value-of disable-output-escaping="yes" select="BriefContent"></xsl:value-of>
 			</div>
 		</div>
 		<div class="content">
