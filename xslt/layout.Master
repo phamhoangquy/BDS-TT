@@ -28,7 +28,7 @@
 	<portal:SkinFolderScript ID="SkinFolderScript3" runat="server" ScriptFileName="js/canhcam.js"
 		AddToCombinedScript="true" />
 	<portal:GoogleAnalyticsScript ID="GoogleAnalyticsScript1" runat="server" />
-
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<!--*********************************************************************************************-->
 	<!-- Canh Cam - the best Web Solutions Provider - http://www.canhcam.vn                          -->
 	<!-- 156 Nguyen Van Thu, District 1, Ho Chi Minh City, Viet Nam.                                 -->
@@ -96,20 +96,7 @@
 					</asp:ContentPlaceHolder>
 				</asp:Panel>
 			</main>
-			<!-- <footer class="footer">
-				<div class="container">
-					<asp:Panel ID="divAltContent2" runat="server" CssClass="altcontent2">
-						<asp:ContentPlaceHolder ID="altContent2" runat="server"></asp:ContentPlaceHolder>
-					</asp:Panel>
-					<div class="col-sm-5 fmenu PaddR0">
-						<%--<portal:ModuleWrapper ID="mdl55" runat="server" ConfigureModuleId="55" />--%>
-					</div>
-					<div class="col-sm-7 info-f">
-						<portal:CopyrightLabel id="cl1" runat="server" ShowYear="true" BeginYear="2015" />
-					</div>
-				</div>
-				<div class="clear"></div>
-			</footer> -->
+
 			<footer>
 				<div class="footer-block">
 					<div class="container">
@@ -118,47 +105,23 @@
 								<portal:modulewrapper id="mdl157" runat="server" configuremoduleid="157" />
 							</div>
 							<div class="col-md-3 footer card">
-								<div class="card_title">
-									<h3>GIỚI THIỆU</h3>
-								</div>
-								<div class="card_body">
-									<ul>
-										<li> <a href="#">Tầm nhìn - sứ mệnh</a></li>
-										<li> <a href="#">Hoạt động doanh nghiệp</a></li>
-										<li><a href="#">Tin tức</a></li>
-										<li><a href="#">Tuyển dụng</a></li>
-										<li><a href="#">Liên hệ</a></li>
-									</ul>
-								</div>
+								<portal:modulewrapper id="mdl166" runat="server" configuremoduleid="166" />
+							</div>
+							<div class="col-md-3 footer card">
+								<portal:modulewrapper id="mdl167" runat="server" configuremoduleid="167" />
 							</div>
 							<div class="col-md-3 footer card">
 								<div class="card_title">
-									<h3>DỰ ÁN</h3>
+									<portal:modulewrapper id="mdl168" runat="server" configuremoduleid="168" />
 								</div>
 								<div class="card_body">
-									<ul>
-										<li><a href="#">Dự án triển khai</a></li>
-										<li> <a href="#">Dự án sắp triển khai</a></li>
-									</ul>
-								</div>
-							</div>
-							<div class="col-md-3 footer card">
-								<div class="card_title">
-									<h3>Đăng ký nhận bản tin</h3>
-								</div>
-								<div class="card_body">
-									<p>Để được tư vấn những dự án mới nhất và các chính sách ưu đãi của Tân Thịnh</p>
-									<div class="subsrcibe">
-										<div class="subscribefrm">
-											<input type="text" placeholder="Nhập địa chỉ email"><em class="material-icons">send</em>
-										</div>
-									</div>
+									<portal:modulewrapper id="mdl172" runat="server" configuremoduleid="172" />
+
+									<portal:modulewrapper id="mdl170" runat="server" configuremoduleid="170" />
 								</div>
 								<div class="bottom-wrapper-news-detail">
-									<p>KẾT NỐI VỚI TÂN THỊNH</p>
-									<div class="social-network-share">
-										<div class="icon"><a href="#"><em class="fab fa-facebook-f"></em></a><a href="#"><em class="fab fa-twitter"></em></a><a href="#"><em class="fab fa-youtube"></em></a></div>
-									</div>
+									<portal:modulewrapper id="mdl169" runat="server" configuremoduleid="169" />
+
 								</div>
 							</div>
 						</div>
@@ -167,17 +130,16 @@
 				<div class="container">
 					<div class="footer-bottom-wrapper">
 						<div class="copy-right">
-							<p>2020 © Tân Thịnh. Thiết kế website bởi Cánh Cam 	</p>
+							<portal:CopyrightLabel ID="cl1" runat="server" ShowYear="true" BeginYear="2020" />
 						</div>
 						<div class="web-counter">
-							<div class="text">Điều khoản và điều kiện
-								<p>Chính sách bảo mật</p>
-							</div>
+							<portal:modulewrapper id="mdl173" runat="server" configuremoduleid="173" />
 						</div>
 					</div>
 				</div>
-			</footer>
-			<%--<ul>
+		</div>
+		</footer>
+		<%--<ul>
                 <portal:welcomemessage id="WelcomeMessage" runat="server" renderaslistitem="true" listitemcss="firstnav" />
                 <portal:homelink id="HomeLink" runat="server" renderaslistitem="true" />
                 <portal:mobileskinlink id="mobileskin" runat="server" renderaslistitem="true" />
@@ -261,6 +223,7 @@
 				}
 
 			</script>
+			
 		</portal:AutoHidePanel>
 		<portal:Woopra ID="woopra11" runat="server" />
 	</form>
