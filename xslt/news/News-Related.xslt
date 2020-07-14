@@ -4,7 +4,7 @@
 	<xsl:output method="html" indent="yes" />
 
 	<xsl:template match="/">
-		<section class="news-silde">
+		<section class="news-silde" id='section-id-4'>
 			<div class="container">
 				<div class="head-title">
 					<h2>

@@ -69,6 +69,10 @@
 						</div>
 						<div class="wrapper-bottom">
 							<portal:ModuleWrapper ID="mdl146" runat="server" ConfigureModuleId="146" />
+								<div class="search-wrapper">
+									<div class="search-toggle"><em class="mdi mdi-magnify"> </em></div>
+									<portal:ModuleWrapper ID="mdl231" runat="server" ConfigureModuleId="231" />
+								</div>
 						</div>
 					</div>
 					<div class="mobile-wrapper"></div>

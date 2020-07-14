@@ -55,9 +55,17 @@
 					<div class="content">
 						<ul>
 							<li> <a href="">
+
+						
 									<xsl:value-of disable-output-escaping="yes" select="$ZoneTitle"></xsl:value-of>
 								</a></li>
 							<li> <a href="">
+										<xsl:attribute name="href">
+											<xsl:value-of select="Url"></xsl:value-of>
+										</xsl:attribute>
+										<xsl:attribute name="title">
+											<xsl:value-of select="Title"></xsl:value-of>
+										</xsl:attribute>
 									<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
 									<xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
 								</a></li>
@@ -99,6 +107,12 @@
 										<xsl:value-of disable-output-escaping="yes" select="$ZoneTitle1"></xsl:value-of>
 									</a></li>
 								<li> <a href="">
+											<xsl:attribute name="href">
+												<xsl:value-of select="Url"></xsl:value-of>
+											</xsl:attribute>
+											<xsl:attribute name="title">
+												<xsl:value-of select="Title"></xsl:value-of>
+											</xsl:attribute>
 										<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
 										<xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
 									</a></li>
@@ -140,6 +154,12 @@
 										<xsl:value-of disable-output-escaping="yes" select="$ZoneTitle2"></xsl:value-of>
 									</a></li>
 								<li> <a href="">
+											<xsl:attribute name="href">
+												<xsl:value-of select="Url"></xsl:value-of>
+											</xsl:attribute>
+											<xsl:attribute name="title">
+												<xsl:value-of select="Title"></xsl:value-of>
+											</xsl:attribute>
 										<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
 										<xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
 									</a></li>
