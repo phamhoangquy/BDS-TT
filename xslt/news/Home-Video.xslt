@@ -10,7 +10,7 @@
 		</div>
 	</xsl:template>
 	<xsl:template match="News">
-		<div class="col-lg-12">
+		<div class="col-12 col-md-6 col-lg-12">
 			<div class="figure-media">
 				<div class="figure-image media-play">
 					<div class="wrapper">
@@ -49,30 +49,5 @@
 			</div>
 		</div>
 	</xsl:template>
-	<xsl:template match="NewsImages">
-		<xsl:param name="NewsPosition"></xsl:param>
-		<xsl:if test="position()>1">
-			<a>
-				<xsl:attribute name="data-fancybox">
-					<xsl:text>gallery-</xsl:text>
-					<xsl:value-of disable-output-escaping="yes" select="$NewsPosition"></xsl:value-of>
-				</xsl:attribute>
-				<xsl:attribute name="href">
-					<xsl:value-of select="BriefContent"></xsl:value-of>
-				</xsl:attribute>
-				<xsl:attribute name="Title">
-					<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
-				</xsl:attribute>
 
-				<img>
-				<xsl:attribute name="src">
-					<xsl:value-of select="ImageUrl"></xsl:value-of>
-				</xsl:attribute>
-				<xsl:attribute name="alt">
-					<xsl:value-of select="Title"></xsl:value-of>
-				</xsl:attribute>
-				</img>
-			</a>
-		</xsl:if>
-	</xsl:template>
 </xsl:stylesheet>
