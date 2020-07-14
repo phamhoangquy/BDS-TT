@@ -14,8 +14,6 @@
 	</xsl:template>
 	<xsl:template match="News">
 		<div class="col-12 col-md-6 col-lg-4">
-
-
 			<div class="figure-media">
 				<div class="figure-image media-play">
 					<div class="wrapper">
@@ -52,8 +50,6 @@
 					</div>
 				</div>
 			</div>
-
-		
 		</div>
 	</xsl:template>
 	<xsl:template match="NewsImages">
