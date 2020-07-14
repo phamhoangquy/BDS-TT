@@ -14,37 +14,46 @@
 	</xsl:template>
 	<xsl:template match="News">
 		<div class="col-12 col-md-6 col-lg-4">
-			<div class="card_img_video">
 
-				<a>
-					<xsl:attribute name="data-fancybox">
-						<xsl:text>gallery-</xsl:text>
-						<xsl:value-of disable-output-escaping="yes" select="position()"></xsl:value-of>
-					</xsl:attribute>
-					<xsl:attribute name="href">
-						<xsl:value-of disable-output-escaping="yes" select="BriefContent"></xsl:value-of>
-					</xsl:attribute>
-					<xsl:attribute name="title">
-						<xsl:value-of select="Title"></xsl:value-of>
-					</xsl:attribute>
-					<img>
-					<xsl:attribute name="src">
-						<xsl:value-of select="ImageUrl"></xsl:value-of>
-					</xsl:attribute>
-					<xsl:attribute name="alt">
-						<xsl:value-of select="Title"></xsl:value-of>
-					</xsl:attribute>
-					</img>
-				</a>
-				<xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
-				<div class="hidden" style='display:none;'>
-					<xsl:apply-templates select="NewsImages">
-						<xsl:with-param select="position()" name="NewsPosition" />
-					</xsl:apply-templates>
+
+			<div class="figure-media">
+				<div class="figure-image media-play">
+					<div class="wrapper">
+
+						<a>
+							<xsl:attribute name="data-fancybox">
+								<xsl:text>gallery-</xsl:text>
+								<xsl:value-of disable-output-escaping="yes" select="position()"></xsl:value-of>
+							</xsl:attribute>
+							<xsl:attribute name="href">
+								<xsl:value-of disable-output-escaping="yes" select="BriefContent"></xsl:value-of>
+							</xsl:attribute>
+							<xsl:attribute name="title">
+								<xsl:value-of select="Title"></xsl:value-of>
+							</xsl:attribute>
+							<img>
+							<xsl:attribute name="src">
+								<xsl:value-of select="ImageUrl"></xsl:value-of>
+							</xsl:attribute>
+							<xsl:attribute name="alt">
+								<xsl:value-of select="Title"></xsl:value-of>
+							</xsl:attribute>
+							</img>
+						</a>
+						<xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
+
+					</div>
+					<div class="caption">
+						<div class="icon"><img src="/Data/Sites/1/skins/default/img/play-icon.png" alt=""/>
+						</div>
+						<div class="text">
+							<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
+						</div>
+					</div>
 				</div>
-
-				<div class="video"><em class="lnr lnr-chevron-right-circle"></em></div>
 			</div>
+
+		
 		</div>
 	</xsl:template>
 	<xsl:template match="NewsImages">

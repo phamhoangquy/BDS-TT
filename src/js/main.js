@@ -13,8 +13,26 @@ $(document).ready(function () {
 	coutingNumber();
 	tabActive();
 	hideTool();
+	toggleSearch();
 });
 
+function toggleSearch() {
+	let button = $(".search-toggle");
+	let search = $(".searchbox");
+
+
+
+	button.on("click", function () {
+		if (search.hasClass('active')) {
+			search.removeClass('active')
+		} else {
+			search.addClass('active')
+		}
+
+
+	});
+
+}
 //Check if windows size large then 1024 then these function will be execute
 if ($(window).width() > 1024) {
 	const $menu = $(".searchbox");
@@ -93,7 +111,7 @@ function swiperInit() {
 	var brandSwiper = new Swiper(".brand-display .swiper-container", {
 		// Optional parameters
 		speed: 1000,
-
+		spaceBetween: 30,
 		autoplay: {
 			delay: 2000
 		},
@@ -105,31 +123,31 @@ function swiperInit() {
 		breakpoints: {
 			320: {
 				slidesPerView: 1,
-				spaceBetween: 100
+				
 			},
 			400: {
 				slidesPerView: 1,
-				spaceBetween: 100
+				
 			},
 			480: {
 				slidesPerView: 1,
-				spaceBetween: 100
+				
 			},
 			768: {
 				slidesPerView: 4,
-				spaceBetween: 100
+				
 			},
 			1025: {
 				slidesPerView: 4,
-				spaceBetween: 100
+				
 			},
 			1440: {
 				slidesPerView: 6,
-				spaceBetween: 100
+				
 			},
 			1600: {
 				slidesPerView: 6,
-				spaceBetween: 100
+				
 			}
 		},
 
@@ -147,7 +165,7 @@ function newsSlide(){
 			nextEl: '.news-silde .nav-arrow-next',
 			prevEl: '.news-silde .nav-arrow-prev',
 		},
-		// breakpointsInverse: true,
+		breakpointsInverse: true,
 		spaceBetween: 30,
 		breakpoints: {
 			320: {
@@ -238,7 +256,7 @@ function newsHomeSlide(){
 			nextEl: '.home-news .nav-arrow-next',
 			prevEl: '.home-news .nav-arrow-prev',
 		},
-		// breakpointsInverse: true,
+		breakpointsInverse: true,
 		breakpoints: {
 			320: {
 				slidesPerView: 1,
@@ -283,7 +301,7 @@ function locationProject(){
 			nextEl: '.location-project .nav-arrow-next',
 			prevEl: '.location-project .nav-arrow-prev',
 		},
-		// breakpointsInverse: true,
+		breakpointsInverse: true,
 		spaceBetween: 50,
 		breakpoints: {
 			320: {

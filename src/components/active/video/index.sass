@@ -1,4 +1,6 @@
 .video-active
+	.col-12
+		margin-bottom: 30px
 	.head-title
 		display: flex
 		justify-content: space-between
@@ -39,35 +41,7 @@
 					font-weight: 600
 					&:hover
 						color: #0b6227
-	.card_img_video
-		cursor: pointer
-		position: relative
-		padding-bottom: 30px
-		@media screen and ( max-width: 576px )
-			img
-				width: 100%
-				object-fit: cover
-		@media screen and ( max-width: 1200px )
-			img 
-				width: 100%
-				object-fit: cover
-		.video 
-			display: flex
-			position: absolute
-			top: 60%
-			left: 38%
-			pointer-events: none
-			align-items: center
-			justify-content: center
-			transform: translateY(-50%)
-			opacity: .8
-			border-radius: 50%
-			width: 5.8rem
-			height: 5.8rem
-			em 
-				font-size: 60px
-				color: #ffffff
-				opacity: .8
+
 	.button
 		display: flex
 		align-items: center
@@ -83,3 +57,173 @@
 			&:hover
 				background: #c80916
 				color: #ffffff
+	.figure-media
+		.figure-image
+			.wrapper
+				a
+					display: block
+					height: 0
+					overflow: hidden
+					padding-top: 190 / 390 * 100%
+					position: relative
+					img
+						position: absolute
+						top: 0
+						left: 0
+						width: 100%
+						height: 100%
+						object-fit: cover
+.figure-media
+	position: relative
+	&.image-media
+		.figure-image
+			.wrapper
+				a
+					display: block
+					height: 0
+					overflow: hidden
+					padding-top: 190 / 390 * 100%
+					position: relative
+					img
+						position: absolute
+						top: 0
+						left: 0
+						width: 100%
+						height: 100%
+						object-fit: cover
+		.caption
+			transition: .3s all ease-in-out
+	&.media-big
+		@media screen and ( max-width:1025px)
+			padding: 0
+		.figure-image
+			&:after
+				content: ''
+				display: block
+				position: absolute
+				left: 0
+				bottom: 0
+				right: 0
+				top: 0
+				background: rgba(#333333,.5)
+				pointer-events: none
+				transition: .3s all ease-in-out
+				opacity: 0
+			.wrapper
+				a
+					display: block
+					height: 0
+					overflow: hidden
+					padding-top: 400 / 600 * 100%
+					position: relative
+					img
+						position: absolute
+						top: 0
+						left: 0
+						width: 100%
+						height: 100%
+						object-fit: cover
+
+
+	.figure-image
+		height: auto
+		position: relative
+		&.media-gallery
+			.caption
+				display: flex
+				flex-direction: column
+				.text
+					order: 1
+				.icon
+					height: 100%
+					width: 100%
+					order: 2
+					img
+						@apply block
+						margin: 0 auto
+		&:before
+			content: ''
+			display: block
+			position: absolute
+			left: 0
+			bottom: 0
+			width: 100%
+			height: 100%
+			background: rgba(#0b6528,.5)
+			pointer-events: none
+			z-index: 9
+		&:after
+			z-index: 9
+			content: ''
+			display: block
+			position: absolute
+			left: 0
+			bottom: 0
+			right: 0
+			top: 0
+			background: rgba(#0b6528,.5)
+			pointer-events: none
+			transition: .3s all ease-in-out
+			opacity: 0
+	.wrapper
+		height: 100%
+		a
+			display: block
+			height: 100%
+			img
+				max-width: 100%
+				height: 100%
+				width: 100%
+	.caption
+		z-index: 10
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%,-50%)
+		width: 100%
+		height: 100%
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-direction: column
+		pointer-events: none
+		padding: 0 30px
+		@media screen and ( max-width: 1024px)
+			padding: 0 15px
+			
+		.icon
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 65px
+			height: 65px
+			margin:  5px 0
+			@media screen and ( max-width: 1280px )
+				width: 46px
+				margin: 5px auto
+				height: 46px
+			@media screen and ( max-width: 576px )
+				width: 32px
+				margin: 5px auto
+				height: 32px
+			em
+				@apply text-white block mx-auto text-40
+				height: 40px
+				line-height: 40px
+			img
+				max-width: 100%
+				height: auto
+				display: block
+				margin: 0 auto !important
+		.text
+			font-size: .875rem
+			font-weight: 600
+			text-align: center
+			color: #ffffff
+			padding-top: 5px
+			display: -webkit-box
+			-webkit-line-clamp: 2
+			-webkit-box-orient: vertical
+			overflow: hidden
+			&:hover
+				text-decoration: underline

@@ -8,8 +8,6 @@ header
 	z-index: 999
 	max-width: 100%
 	background: #ffff
-	@media (min-width: 1280px)
-		max-width: 1440px
 	@media screen and ( max-width: 1024px)
 		height: 60px
 		
@@ -18,13 +16,17 @@ header
 		height: 100%
 	.container
 		height: 100%
+	.wrapper-bottom
+		display:  flex 
+		justify-content: space-between
+		flex-direction: row-reverse
 	.header-wrapper-right
 		display: flex
 		justify-content: space-between
 		flex-direction: column
 		align-items: flex-end
 		height: 100%
-		padding: 20px 0
+		padding: 20px 0 10px 0
 		@media screen and ( max-width: 1024px )
 			padding: 0
 			
@@ -46,6 +48,7 @@ header
 					width: 130px
 
 	.search-wrapper
+		margin-left: 30px
 		@media screen and ( max-width: 1024px)
 			display: flex
 			align-items: center
@@ -195,6 +198,7 @@ header
 			a
 	
 		a
+			text-transform: uppercase
 			display: inline-block
 			padding: 0 20px
 			font-size: 1rem

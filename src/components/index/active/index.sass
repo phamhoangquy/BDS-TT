@@ -1,117 +1,72 @@
 .active
-    .head-title
-        display: flex
-        justify-content: space-between
-        h2
-            font-size: 48px
-        @media screen and ( max-width: 576px )
-            h2
-                font-size: 26px
-        @media screen and ( max-width: 1024px )
-            h2
-                font-size: 28px
-        &.line
-            padding-left: 90px
-            position: relative
-            &::before
-                content: ''
-                width: 71px
-                height: 1px
-                background: #c80916
-                position: absolute
-                top: 50%
-                transform: translateY(-50%)
-                left: 0
-                @media screen and ( max-width:1024px )
-                    top: 65%
-                @media screen and ( max-width:576px )
-                    top: 70%
-        .watch-all
-            float: right
-            text-align: right
-            color: #979797
-            font-size: 12px
-            display: flex
-            align-items: center
-            justify-content: center
-    .head-video
-        @media screen and ( max-width: 576px )
-            padding-top: 30px
-        @media screen and ( max-width: 1024px )
-            padding-top: 30px
-            
-    .card_img 
-        display: flex
-        padding: 50px 0 0 0
-        cursor: pointer
-        .content
-            padding-left: 20px
-            box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.1)
-            padding-right: 10px
-            .date 
-                padding-top: 10px
-                time 
-                    color: #666666
-                    font-size: 12px
-            p 
-                font-size: 1rem
-                padding: 24px 0 24px 0
-                color: #333333
-                font-weight: 600
-                &:hover
-                    color: #c80916
-            a
-                color: #666666
-                font-size: 12px
-                &:hover
-                    color: #c80916
-            em 
-                float: right
-                text-align: right
-                color: #979797
-    .card_img_video
-        padding: 50px 0 0 0
-        cursor: pointer
-        position: relative
-        @media screen and ( max-width: 576px )
-            img
-                width: 100%
-                object-fit: cover
-        @media screen and ( max-width: 1200px )
-            img 
-                width: 100%
-                object-fit: cover
-        .video-big
-            display: flex
-            position: absolute
-            top: 60%
-            left: 38%
-            pointer-events: none
-            align-items: center
-            justify-content: center
-            transform: translateY(-50%)
-            opacity: .8
-            border-radius: 50%
-            width: 5.8rem
-            height: 5.8rem
-            em 
-                font-size: 60px
-                color: #ffffff
-                opacity: .8
-        .video
-            display: flex
-            position: absolute
-            top: 60%
-            left: 28%
-            pointer-events: none
-            align-items: center
-            justify-content: center
-            transform: translateY(-50%)
-            opacity: .8
-            border-radius: 50%
-            width: 5.8rem
-            height: 5.8rem
-            em 
-                font-size: 40px
-                color: #ffffff
-                opacity: .8
+	.head-title
+		display: flex
+		justify-content: space-between
+		h2
+			font-size: 48px
+		@media screen and ( max-width: 576px )
+			h2
+				font-size: 26px
+		@media screen and ( max-width: 1024px )
+			h2
+				font-size: 28px
+		&.line
+			padding-left: 90px
+			position: relative
+			&::before
+				content: ''
+				width: 71px
+				height: 1px
+				background: #c80916
+				position: absolute
+				top: 50%
+				transform: translateY(-50%)
+				left: 0
+				@media screen and ( max-width:1024px )
+					top: 65%
+				@media screen and ( max-width:576px )
+					top: 70%
+		.watch-all
+			float: right
+			text-align: right
+			color: #979797
+			font-size: 12px
+			display: flex
+			align-items: center
+			justify-content: center
+	.head-video
+		@media screen and ( max-width: 576px )
+			padding-top: 30px
+		@media screen and ( max-width: 1024px )
+			padding-top: 30px
+			
+	.card_img 
+		display: flex
+		padding: 50px 0 0 0
+		cursor: pointer
+		.content
+			padding-left: 20px
+			box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.1)
+			padding-right: 10px
+			.date 
+				padding-top: 10px
+				time 
+					color: #666666
+					font-size: 12px
+			p 
+				font-size: 1rem
+				padding: 24px 0 24px 0
+				color: #333333
+				font-weight: 600
+				&:hover
+					color: #c80916
+			a
+				color: #666666
+				font-size: 12px
+				&:hover
+					color: #c80916
+			em 
+				float: right
+				text-align: right
+				color: #979797
+	
