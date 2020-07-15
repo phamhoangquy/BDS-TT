@@ -70,7 +70,7 @@
 							</div>
 						</div>
 						<div class="fb-comment-wrapper">
-							<div class="fb-comments" data-numposts="5" data-width="">
+							<div class="fb-comments" data-numposts="5" data-width="100%">
 								<xsl:attribute name="data-href">
 									<xsl:value-of disable-output-escaping="yes" select="/NewsDetail/FullUrl">
 									</xsl:value-of>

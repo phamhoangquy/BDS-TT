@@ -37,21 +37,29 @@
 					<time>
 						<xsl:value-of disable-output-escaping="yes" select="CreatedDate"></xsl:value-of>
 					</time>
-					<p>
-						<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
-					</p><a>
+					<div class="title">
+						<a>
+							<xsl:attribute name="href">
+								<xsl:value-of select="Url"></xsl:value-of>
+							</xsl:attribute>
+							<xsl:attribute name="title">
+								<xsl:value-of select="Title"></xsl:value-of>
+							</xsl:attribute>
+							<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
+						</a>
+					</div>
 
-
+					<div class="watch-all">
+						<a>
 						<xsl:attribute name="href">
 							<xsl:value-of select="Url"></xsl:value-of>
 						</xsl:attribute>
 						<xsl:attribute name="title">
 							<xsl:value-of select="Title"></xsl:value-of>
 						</xsl:attribute>
-
-
 						Xem thêm
-					</a><em class="mdi mdi-arrow-right"></em>
+						</a><em class="mdi mdi-arrow-right"></em>
+					</div>
 				</div>
 			</div>
 		</div>

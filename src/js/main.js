@@ -14,6 +14,7 @@ $(document).ready(function () {
 	tabActive();
 	hideTool();
 	toggleSearch();
+	toggleComment();
 });
 
 function toggleSearch() {
@@ -91,6 +92,13 @@ function setBackground() {
 			"background-repeat": "repeat",
 		});
 	});
+}
+
+
+function toggleComment(){
+	$('.fb-link-comment-toggle').on('click',function(){
+		$('.fb-comment-wrapper').slideToggle();
+	})
 }
 
 function swiperInit() {
