@@ -15,6 +15,8 @@ $(document).ready(function () {
 	hideTool();
 	toggleSearch();
 	toggleComment();
+	appendRecruit();
+	toggleApplyForm();
 });
 
 function toggleSearch() {
@@ -47,9 +49,19 @@ if ($(window).width() > 1024) {
 		}
 	});
 }
+function toggleApplyForm() {
+	$(".apply-form .button-apply a").on("click", function () {
+		$(".form-apply").slideToggle();
+	});
+}
 
 
-
+function appendRecruit() {
+	if ($("body").hasClass('news-detail-page')) {
+		$('.right-recruitment-detail-form-contact').insertAfter('.button-wrapper-recruitment')
+	}
+	
+}
 function tabActive() {
 	$(".tab-navigation li a").on("click", function () {
 		$(this)

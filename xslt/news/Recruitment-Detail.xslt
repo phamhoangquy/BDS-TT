@@ -50,7 +50,7 @@
 					</div>
 					<div class="col-lg-3">
 						<div class="row">
-							<div class="right-hr-detail">
+							<div class="right-hr-detail button-wrapper-recruitment">
 								<div class="frm-btnwrap">
 									<div class="apply-form">
 										<div class="btn  button-apply"> <a href="javascript:void(0)">Ứng tuyển
