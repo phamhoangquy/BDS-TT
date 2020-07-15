@@ -42,9 +42,6 @@
 							</xsl:attribute>
 							<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
 						</a> </p>
-
-
-
 					<a>
 
 						<xsl:attribute name="href">
