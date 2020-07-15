@@ -3,13 +3,20 @@
 	background-repeat: no-repeat
 	background-size: cover
 	background-position: center
+	padding: 80px 0 
+	@media screen and ( max-width: 1024px)
+		padding: 60px 0
 	.col-lg-3
 		.col-12
 			margin-bottom: 30px
+	.col-lg-8
+		.card-body
+			.img 
+				+img-ratio(450/600)
 	.head-title
-		padding: 85px 0 80px 0
 		display: flex
 		justify-content: space-between
+		margin-bottom: 40px
 		h2 
 			font-size: 48px
 		@media screen and ( max-width: 1024px )
@@ -19,6 +26,12 @@
 			padding: 30px 0 30px 0
 			h2
 				font-size: 28px
+		.Module 
+			width: 100%
+		.ModuleContent
+			display: flex
+			justify-content: space-between
+			align-items: center
 		&.line
 			padding-left: 90px
 			position: relative
@@ -41,11 +54,17 @@
 				list-style: none
 				padding: 0
 				display: flex
+
+
 				li 
 					padding-right: 15px
+					&.active
+						a
+							color: $green
+							text-decoration: underline
 					a 
 						font-size: 16px
-						font-weight: 500
+						font-weight: 600
 						&:hover
 							color: #0b6528
 						@media screen and ( max-width: 576px )
@@ -57,7 +76,7 @@
 				width: 100%
 
 	.title_video.line
-		padding: 85px 0 55px 0
+		margin-bottom: 40px
 		h2 
 			font-size: 48px
 		@media screen and ( max-width: 1024px )

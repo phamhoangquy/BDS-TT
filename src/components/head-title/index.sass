@@ -30,11 +30,20 @@
 		ul 
 			list-style: none
 			padding: 0
+			display: flex
+			justify-content: flex-end
+			align-items: center
 			li 
-				display: flex
+				display: inline-block
+				&:not(:last-child)
+					margin-right: 15px
 				a 
 					padding-right: 20px
 					font-size: 1rem
 					font-weight: 600
 					&:hover
 						color: #0b6227
+	.container
+		display: flex
+		justify-content: space-between
+		align-items: flex-end

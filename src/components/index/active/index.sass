@@ -1,7 +1,10 @@
 .active
+	.col-12 
+		margin-bottom: 30px
 	.head-title
 		display: flex
 		justify-content: space-between
+		margin-bottom: 40px
 		h2
 			font-size: 48px
 		@media screen and ( max-width: 576px )
@@ -26,6 +29,12 @@
 					top: 65%
 				@media screen and ( max-width:576px )
 					top: 70%
+		.Module 
+			width: 100%
+		.ModuleContent
+			display: flex
+			justify-content: space-between
+			align-items: center
 		.watch-all
 			float: right
 			text-align: right
@@ -42,31 +51,84 @@
 			
 	.card_img 
 		display: flex
-		padding: 50px 0 0 0
 		cursor: pointer
+		height: 160px
+		.image-wrapper
+			a
+				display: block
+				height: 160px
+				width: auto
+				min-width: 150px
+				max-width: 150px
+				img
+					width: 100%
+					height: 100%
+					object-fit: cover
 		.content
-			padding-left: 20px
+			padding: 15px 15px 15px 20px
 			box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.1)
-			padding-right: 10px
+			display: flex
+			justify-content: space-between
+			align-items: start
+			flex-direction: column
 			.date 
-				padding-top: 10px
 				time 
 					color: #666666
 					font-size: 12px
-			p 
+			.title 
 				font-size: 1rem
-				padding: 24px 0 24px 0
+				padding: 0 0
 				color: #333333
 				font-weight: 600
 				&:hover
 					color: #c80916
-			a
-				color: #666666
-				font-size: 12px
-				&:hover
-					color: #c80916
-			em 
-				float: right
-				text-align: right
-				color: #979797
-	
+				a
+					font-weight: 600
+					font-size: 1rem
+					line-height: 1.175
+					color: #333333
+			.view-all
+				a
+					color: #666666
+					font-size: 12px
+					&:hover
+						color: #c80916
+				em 
+					float: right
+					text-align: right
+					color: #666666
+	.col-lg-12
+		margin-bottom: 30px
+		.figure-media
+			.figure-image
+				.wrapper
+					a
+						display: block
+						height: 0
+						overflow: hidden
+						padding-top: 190 / 390 * 100%
+						position: relative
+						img
+							position: absolute
+							top: 0
+							left: 0
+							width: 100%
+							height: 100%
+							object-fit: cover
+	.col-lg-6
+		.figure-media
+			.figure-image
+				.wrapper
+					a
+						display: block
+						height: 0
+						overflow: hidden
+						padding-top: 130 / 180 * 100%
+						position: relative
+						img
+							position: absolute
+							top: 0
+							left: 0
+							width: 100%
+							height: 100%
+							object-fit: cover

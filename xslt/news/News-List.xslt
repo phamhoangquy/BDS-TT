@@ -15,15 +15,14 @@
 	<xsl:template match="News">
 		<div class="col-12 col-md-6 col-lg-4">
 			<div class="card-body">
-				<a>
-					<xsl:attribute name="href">
-						<xsl:value-of select="Url"></xsl:value-of>
-					</xsl:attribute>
-					<xsl:attribute name="title">
-						<xsl:value-of select="Title"></xsl:value-of>
-					</xsl:attribute>
-
-					<div class="img shine"> <img>
+				<div class="img shine"> <a>
+						<xsl:attribute name="href">
+							<xsl:value-of select="Url"></xsl:value-of>
+						</xsl:attribute>
+						<xsl:attribute name="title">
+							<xsl:value-of select="Title"></xsl:value-of>
+						</xsl:attribute>
+						<img>
 						<xsl:attribute name="src">
 							<xsl:value-of select="ImageUrl"></xsl:value-of>
 						</xsl:attribute>
@@ -31,28 +30,29 @@
 							<xsl:value-of select="Title"></xsl:value-of>
 						</xsl:attribute>
 						</img>
-					</div>
-					<div class="content">
-						<time>
-							<xsl:value-of disable-output-escaping="yes" select="CreatedDate"></xsl:value-of>
-						</time>
-						<p>
-							<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
-						</p><a>
+					</a>
+
+				</div>
+				<div class="content">
+					<time>
+						<xsl:value-of disable-output-escaping="yes" select="CreatedDate"></xsl:value-of>
+					</time>
+					<p>
+						<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
+					</p><a>
 
 
-							<xsl:attribute name="href">
-								<xsl:value-of select="Url"></xsl:value-of>
-							</xsl:attribute>
-							<xsl:attribute name="title">
-								<xsl:value-of select="Title"></xsl:value-of>
-							</xsl:attribute>
+						<xsl:attribute name="href">
+							<xsl:value-of select="Url"></xsl:value-of>
+						</xsl:attribute>
+						<xsl:attribute name="title">
+							<xsl:value-of select="Title"></xsl:value-of>
+						</xsl:attribute>
 
 
-							Xem thêm
-						</a><em class="mdi mdi-arrow-right"></em>
-					</div>
-				</a>
+						Xem thêm
+					</a><em class="mdi mdi-arrow-right"></em>
+				</div>
 			</div>
 		</div>
 	</xsl:template>

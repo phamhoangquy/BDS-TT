@@ -1,146 +1,153 @@
 .home-news
-    .head-title
-        padding: 100px 0 50px 115px
-        h2 
-            font-size: 48px
-        @media screen and ( max-width: 576px )
-            padding: 30px 0 30px 0
-            h2 
-                font-size: 30px
-        
-        &.line
-            padding-left: 90px
-            position: relative
-            &::before
-                content: ''
-                width: 71px
-                height: 1px
-                background: #c80916
-                position: absolute
-                top: 62%
-                transform: translateY(-50%)
-                left: 0
-                @media screen and ( max-width:1024px )
-                    top: 62%
-                @media screen and ( max-width:576px )
-                    top: 52%
+	.head-title
+		padding: 100px 0 50px 115px
+		h2 
+			font-size: 48px
+		@media screen and ( max-width: 576px )
+			padding: 30px 0 30px 0
+			h2 
+				font-size: 30px
+		.ModuleContent
+			display: flex
+			justify-content: space-between
+			align-items: center
+		&.line
+			padding-left: 90px
+			position: relative
+			&::before
+				content: ''
+				width: 71px
+				height: 1px
+				background: #c80916
+				position: absolute
+				top: 62%
+				transform: translateY(-50%)
+				left: 0
+				@media screen and ( max-width:1024px )
+					top: 62%
+				@media screen and ( max-width:576px )
+					top: 52%
 
-    .card-body
-        position: relative
-        .img 
-            width: 100%
-            img 
-                max-width: 100%
-            @media screen and ( max-width: 576px )
-                img 
-                    width: 100%
-            @media screen and ( max-width: 992px )
-                img 
-                    width: 100%
-        .content
-            padding: 20px
-            background: #ffffff
-            position: relative
-            // box-shadow: 10px 10px 5px #f5f5f5
-            time
-                position: absolute
-                background: #c80916
-                color: #fff
-                width: 100px
-                height: 33px
-                display: flex
-                align-items: center
-                justify-content: center
-                border-radius: 20px
-                top: -1rem
-                left: 5%
-                font-size: 12px
-                @media screen and ( max-width: 1200px )
-                    bottom: 45%
-                @media screen and ( max-width: 1024px )
-                    bottom: 58%
-                @media screen and ( max-width: 767px )
-                    bottom: 23%
-                @media screen and ( max-width: 557px )
-                    bottom: 23%
-            p
-                color: #333
-                font-size: 1rem
-                padding: 30px 0 30px 0
-                font-weight: 600
-            a 
-                font-size: 12px
-                color: #979797
-            em 
-                float: right
-                text-align: right
-                color: #979797
-    .news-swiper-wrapper
-        position: relative
-    .nav-arrow-prev,.nav-arrow-next
-        position: absolute
-        width: 40px
-        height: 40px
-        top: 150px
-        display: flex
-        justify-content: center
-        align-items: center
-        transition: .3s all  ease-in-out
-        @media screen and ( max-width: 400px )
-            top: 40%
-        &:hover,&:focus
-            em
-                color: #ffffff
-        em
-            transition: .3s all  ease-in-out
-            font-size: 18px
-    .nav-arrow-next
-        right: -60px
-        @media screen and ( max-width: 1439px)
-            right: -45px
-        @media screen and ( max-width: 1350px)
-            right: 0
-            
-        @media screen and ( max-width: 767px)
-            right: 15px
-        @media screen and ( max-width: 576px)
-            right: 0
-            top: 108px
-            
-    .nav-arrow-prev
-        left: -60px
-        @media screen and ( max-width: 1439px)
-            left: -45px
-        @media screen and ( max-width: 1350px)
-            left: 0
-        @media screen and ( max-width: 767px)
-            left: 15px
-        @media screen and ( max-width: 576px)
-            left: 0
-            top: 108px
-    .swiper-container
-        margin: 0
-        @media screen and ( max-width: 1350px)
-            margin: 0 50px
-    .swiper-wrapper
-        padding-bottom: 100px
-        @media screen and ( max-width: 576px )
-            padding-bottom: 0
-        .swiper-slide
-            height: auto
-            background: #ffffff
-            .wrapper
-                height: 100%
-                border: 1px solid #e1e1e1
-                a
-                    height: 120px
-                    display: flex
-                    justify-content: center
-                    align-items: center
-                    img
-                        max-width: 100%
-                        height: auto
-                        max-height: 100px
-                     
-
-       
+	.card-body
+		position: relative
+		.img 
+			width: 100%
+			img 
+				max-width: 100%
+			@media screen and ( max-width: 576px )
+				img 
+					width: 100%
+			@media screen and ( max-width: 992px )
+				img 
+					width: 100%
+		.content
+			padding: 20px
+			background: #ffffff
+			position: relative
+			// box-shadow: 10px 10px 5px #f5f5f5
+			time
+				position: absolute
+				background: #c80916
+				color: #fff
+				width: 100px
+				height: 33px
+				display: flex
+				align-items: center
+				justify-content: center
+				border-radius: 20px
+				top: -1rem
+				left: 5%
+				font-size: 12px
+				@media screen and ( max-width: 1200px )
+					bottom: 45%
+				@media screen and ( max-width: 1024px )
+					bottom: 58%
+				@media screen and ( max-width: 767px )
+					bottom: 23%
+				@media screen and ( max-width: 557px )
+					bottom: 23%
+			p
+				color: #333
+				font-size: 1rem
+				padding: 30px 0 30px 0
+				font-weight: 600
+			a 
+				font-size: 12px
+				color: #979797
+			em 
+				float: right
+				text-align: right
+				color: #979797
+	.news-swiper-wrapper
+		position: relative
+	.nav-arrow-prev,.nav-arrow-next
+		position: absolute
+		width: 40px
+		height: 40px
+		top: 150px
+		display: flex
+		justify-content: center
+		align-items: center
+		transition: .3s all  ease-in-out
+		@media screen and ( max-width: 400px )
+			top: 40%
+		&:hover,&:focus
+			em
+				color: #ffffff
+		em
+			transition: .3s all  ease-in-out
+			font-size: 18px
+	.nav-arrow-next
+		right: -60px
+		@media screen and ( max-width: 1439px)
+			right: -45px
+		@media screen and ( max-width: 1350px)
+			right: 0
+			
+		@media screen and ( max-width: 767px)
+			right: 15px
+		@media screen and ( max-width: 576px)
+			right: 0
+			top: 108px
+			
+	.nav-arrow-prev
+		left: -60px
+		@media screen and ( max-width: 1439px)
+			left: -45px
+		@media screen and ( max-width: 1350px)
+			left: 0
+		@media screen and ( max-width: 767px)
+			left: 15px
+		@media screen and ( max-width: 576px)
+			left: 0
+			top: 108px
+	.swiper-container
+		margin: 0
+		@media screen and ( max-width: 1350px)
+			margin: 0 50px
+	.swiper-wrapper
+		padding-bottom: 100px
+		@media screen and ( max-width: 576px )
+			padding-bottom: 0
+		.swiper-slide
+			height: auto
+			background: #ffffff
+			.wrapper
+				height: 100%
+				border: 1px solid #e1e1e1
+				a
+					height: 120px
+					display: flex
+					justify-content: center
+					align-items: center
+					img
+						max-width: 100%
+						height: auto
+						max-height: 100px
+					 
+	.watch-all
+		a
+			font-size: 12px
+			font-weight: 400
+			display: inline-block
+			margin-right: 10px

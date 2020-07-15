@@ -112,7 +112,7 @@
 	</xsl:template>
 	<xsl:template match="News" mode='News-1'>
 		<xsl:if test="position()=1">
-			<div class="caption">
+			<div class="caption-title">
 				<xsl:value-of disable-output-escaping="yes" select="FullContent"></xsl:value-of>
 				<xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
 			</div>

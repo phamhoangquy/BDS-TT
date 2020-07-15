@@ -7,7 +7,7 @@
 		<div class="news-swiper-wrapper">
 			<div class="nav-arrow-prev"><img src="/Data/Sites/1/skins/default/img/home/brand/pre.png" alt="" /></div>
 			<div class="nav-arrow-next"><img src="/Data/Sites/1/skins/default/img/home/brand/next.png" alt="" /></div>
-		
+
 		</div>
 		<div class="swiper-container">
 			<div class="swiper-wrapper">
@@ -20,21 +20,26 @@
 			<div class="card-body">
 
 				<a>
-					<xsl:attribute name="href">
-						<xsl:value-of select="Url"></xsl:value-of>
-					</xsl:attribute>
-					<xsl:attribute name="title">
-						<xsl:value-of select="Title"></xsl:value-of>
-					</xsl:attribute>
-					<div class="img shine">
-						<img>
-						<xsl:attribute name="src">
-							<xsl:value-of select="ImageUrl"></xsl:value-of>
-						</xsl:attribute>
-						<xsl:attribute name="alt">
-							<xsl:value-of select="Title"></xsl:value-of>
-						</xsl:attribute>
-						</img>
+
+					<div class="image-wrapper">
+						<a href="">
+							<xsl:attribute name="href">
+								<xsl:value-of select="Url"></xsl:value-of>
+							</xsl:attribute>
+							<xsl:attribute name="title">
+								<xsl:value-of select="Title"></xsl:value-of>
+							</xsl:attribute>
+							<div class="img shine">
+								<img>
+								<xsl:attribute name="src">
+									<xsl:value-of select="ImageUrl"></xsl:value-of>
+								</xsl:attribute>
+								<xsl:attribute name="alt">
+									<xsl:value-of select="Title"></xsl:value-of>
+								</xsl:attribute>
+								</img>
+							</div>
+						</a>
 					</div>
 					<div class="content">
 						<time>
@@ -52,7 +57,8 @@
 							<xsl:text disable-output-escaping="yes">Xem thêm</xsl:text>
 						</a><em class="mdi mdi-arrow-right"></em>
 					</div>
-				</a></div>
+				</a>
+			</div>
 		</div>
 	</xsl:template>
 </xsl:stylesheet>
