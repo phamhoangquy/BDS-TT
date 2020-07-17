@@ -6,7 +6,7 @@
 	<xsl:template match="/">
 		<section class="head-title">
 			<div class="container">
-				<div class="head-title line">
+				<div class="head-title ">
 					<h2>
 						<xsl:value-of disable-output-escaping="yes" select="/ZoneList/RootTitle"></xsl:value-of>
 					</h2>
