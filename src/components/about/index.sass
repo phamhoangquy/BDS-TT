@@ -21,37 +21,7 @@
 				justify-content: center
 				li 
 					text-align: center
-	.head-title
-		padding: 70px 0 35px 0
-		@media screen and ( max-width: 576px )
-			padding-top: 30px
-		h2
-			font-size: 48px
-		@media screen and ( max-width: 1024px )
-			font-size: 28px
-		@media screen and ( max-width: 576px )
-			h2
-				font-size: 26px
-		&.line
-			padding-left: 90px
-			position: relative
-			&::before
-				content: ''
-				width: 71px
-				height: 1px
-				background: #c80916
-				position: absolute
-				top: 60%
-				transform: translateY(-50%)
-				left: 0
-				@media screen and ( max-width:1024px )
-					top: 25%
-				@media screen and ( max-width:992px )
-					top: 60%
-				@media screen and ( max-width:767px )
-					top: 60%
-				@media screen and ( max-width:576px )
-					top: 50%
+
 	.card_img
 		.img 
 			img 
@@ -74,9 +44,12 @@
 			list-style: none
 			display: flex
 			padding: 10px 60px
+			flex-wrap: wrap
 			li 
 				margin-right: auto
 				position: relative
+				max-width: 45%
+				flex: 0 0 45%
 				&::after 
 					content: ''
 					position: absolute

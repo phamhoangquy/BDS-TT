@@ -2,32 +2,6 @@
 	padding-bottom: 62px
 	@media screen and ( max-width: 576px )
 		padding-bottom: 40px
-	.head-title
-		padding: 70px 0 30px 0
-		h2
-			font-size: 48px
-		@media screen and ( max-width: 1024px )
-			font-size: 30px
-		@media screen and ( max-width: 576px )
-			padding: 30px 0 30px 0
-			h2 
-				font-size: 26px
-		&.line
-			padding-left: 90px
-			position: relative
-			&::before
-				content: ''
-				width: 71px
-				height: 1px
-				background: #c80916
-				position: absolute
-				top: 65%
-				transform: translateY(-50%)
-				left: 0
-				@media screen and ( max-width:1024px )
-					top: 25%
-				@media screen and ( max-width:576px )
-					top: 50%
 	.left
 		background: #e6efe9
 		padding-bottom: 60px
@@ -120,9 +94,11 @@
 				padding: 10px 0 0 20px
 		.frm-captcha
 			display: flex
+			.frm-captcha-input
+				order: 2
 		.RadCaptcha_Default
-			padding-left: 30px
-
+			width: 25%
+			
 .map 
 	.map-wrapper
 		padding-bottom: 80px
