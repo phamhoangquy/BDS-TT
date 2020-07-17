@@ -47,15 +47,17 @@
 						</time>
 						<p>
 							<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
-						</p><a>
-							<xsl:attribute name="href">
-								<xsl:value-of select="Url"></xsl:value-of>
-							</xsl:attribute>
-							<xsl:attribute name="title">
-								<xsl:value-of select="Title"></xsl:value-of>
-							</xsl:attribute>
-							<xsl:text disable-output-escaping="yes">Xem thêm</xsl:text>
-						</a><em class="mdi mdi-arrow-right"></em>
+						</p>
+						<div class="watch-all"> <a>
+								<xsl:attribute name="href">
+									<xsl:value-of select="Url"></xsl:value-of>
+								</xsl:attribute>
+								<xsl:attribute name="title">
+									<xsl:value-of select="Title"></xsl:value-of>
+								</xsl:attribute>
+								<xsl:text disable-output-escaping="yes">Xem thêm</xsl:text>
+							</a><em class="mdi mdi-arrow-right"></em>
+						</div>
 					</div>
 				</a>
 			</div>

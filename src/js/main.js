@@ -9,6 +9,7 @@ $(document).ready(function () {
 	mappingMenu();
 	mappingContact();
 	mappingSearch();
+
 	setBackground();
 	coutingNumber();
 	tabActive();
@@ -17,6 +18,7 @@ $(document).ready(function () {
 	toggleComment();
 	appendRecruit();
 	toggleApplyForm();
+
 });
 
 function toggleSearch() {
@@ -385,7 +387,7 @@ function mappingContact() {
 		selector: ".contact-wrapper",
 		mobileWrapper: ".mobile-wrapper",
 		mobileMethod: "appendTo",
-		desktopWrapper: ".mail-wrapper",
+		desktopWrapper: ".language-wrapper",
 		desktopMethod: "insertBefore",
 		breakpoint: 1025
 	}).watch();
@@ -396,11 +398,11 @@ function mappingSearch() {
 		selector: ".search-wrapper",
 		mobileWrapper: ".mobile-wrapper",
 		mobileMethod: "appendTo",
-		desktopWrapper: ".wrapper-bottom",
-		desktopMethod: "appendTo",
+		desktopWrapper: ".Module-146",
+		desktopMethod: "insertAfter",
 		breakpoint: 1025
 	}).watch();
-}
+	}
 
 
 function watchMoreDetail() {

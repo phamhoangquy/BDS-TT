@@ -134,6 +134,7 @@
 	&:hover
 		background: white
 
+		
 
 		// display: none
 .searchbox
@@ -144,8 +145,10 @@
 	position: relative
 	bottom: 0
 	z-index: 51
-	@media screen and ( max-width:1024px)
-		margin-top: 50px
+
+	@media screen and ( max-width: 1024px)
+		width: 300px
+		
 	&.active
 		input,button
 			opacity: 1
@@ -184,12 +187,28 @@
 		z-index: -1
 		position: absolute
 		top: 0
+		background: #c80916
 		right: 0
 		transition: opacity .3s ease-in-out
 		em
 			color: #ffffff
+			transition: .3s all  ease-in-out
 		&:focus
 			outline: none
+		&:hover
+			background: white
+			em
+				color: #c80916
+	@media screen and ( max-width:1024px)
+		input,button
+			opacity: 1
+			pointer-events: auto
+			z-index: 1
+		input
+			cursor: auto
+			width: 100%
+		button
+			cursor: pointer
 
 .search-wrapper
 	.search-toggle
@@ -201,11 +220,11 @@
 				@apply bg-primary
 				em
 					@apply text-white
+		@media screen and ( max-width: 1024px)
+			display: none
+			
 		em
 			@apply inline-block  text-primary  transition
 			font-size: 20px
 			transition: .3s all ease-in-out
-	@media screen and(max-width:1025px)
-		display: flex
-		justify-content: center
-		align-items: center
+
