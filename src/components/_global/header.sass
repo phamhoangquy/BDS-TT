@@ -8,9 +8,11 @@ header
 	z-index: 999
 	max-width: 100%
 	background: #ffff
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1)
 	@media screen and ( max-width: 1024px)
 		height: 60px
-		
+
+
 	.container-custom
 		background: #ffffff 
 		height: 100%
@@ -69,11 +71,11 @@ header
 		padding-right: 25px
 		position: relative
 		font-weight: 600
-		border-radius: 10px
+		border-radius: 5px
 		em
-			font-size: 18px
+			font-size: 16px
 		span
-			font-size: r(18px)
+			font-size: r(14px)
 
 			display: inline-block
 			margin-left: 20px
@@ -103,11 +105,15 @@ header
 			
 		.language-toggle
 			span
-				font-size: r(14px)
+				font-size: r(12px)
 				display: inline-block
 				margin-right: 10px
+				color: $dove
+				font-weight: 600
+				text-transform: uppercase
 			em
-				font-size: 14px
+				font-size: 18px
+				color: $dove
 			@media screen and ( max-width: 1024px)
 				white-space: nowrap
 				span
@@ -143,6 +149,11 @@ header
 					text-align: left
 					color: #333333
 					transition: .3s all  ease-in-out
+					font-size: r(12px)
+					display: inline-block
+					color: #666666
+					font-weight: 600
+					text-transform: uppercase
 
 	.mobile-toggle
 		display: none
@@ -186,23 +197,23 @@ header
 		padding-top: 20px
 		
 	li
-		&:first-child
-			a
-				padding: 0 20px 0 0
-		&:last-child
-			a
-				padding: 0 0 0 20px
+		display: inline-block
+		&:not(:last-child)
+			padding: 0 20px
+
 		&.active,&:hover
 			a
+				color: $green
+				border-bottom: 2px solid $green
 	
 		a
 			text-transform: uppercase
 			display: inline-block
-			padding: 0 20px
+			padding: 0
 			font-size: 1rem
 			transition: .3s all  ease-in-out
 			color: #333333
-			font-weight: 500
+			font-weight: 600
 			em
 				font-size: 20px
 		@media screen and ( max-width: 1280px)

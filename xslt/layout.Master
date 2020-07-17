@@ -141,6 +141,10 @@
 				</div>
 		</div>
 		</footer>
+		<div class="block__tool dekstop">
+			<portal:modulewrapper id="mdl232" runat="server" configuremoduleid="232" />
+
+		</div>
 		<%--<ul>
                 <portal:welcomemessage id="WelcomeMessage" runat="server" renderaslistitem="true" listitemcss="firstnav" />
                 <portal:homelink id="HomeLink" runat="server" renderaslistitem="true" />
