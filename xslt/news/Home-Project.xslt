@@ -18,7 +18,7 @@
 	<xsl:template match="News" mode='News-1'>
 		<xsl:if test="position()=1">
 
-			<div class="col-lg-8"><a href="">
+			<div class="col-lg-8">
 
 					<xsl:attribute name="href">
 						<xsl:value-of select="Url"></xsl:value-of>
@@ -29,14 +29,22 @@
 
 					<div class="card-body">
 						<div class="img">
-							<img>
-							<xsl:attribute name="src">
-								<xsl:value-of select="ImageUrl"></xsl:value-of>
-							</xsl:attribute>
-							<xsl:attribute name="alt">
-								<xsl:value-of select="Title"></xsl:value-of>
-							</xsl:attribute>
-							</img>
+							<a>
+								<xsl:attribute name="href">
+									<xsl:value-of select="Url"></xsl:value-of>
+								</xsl:attribute>
+								<xsl:attribute name="title">
+									<xsl:value-of select="Title"></xsl:value-of>
+								</xsl:attribute>
+								<img>
+								<xsl:attribute name="src">
+									<xsl:value-of select="ImageUrl"></xsl:value-of>
+								</xsl:attribute>
+								<xsl:attribute name="alt">
+									<xsl:value-of select="Title"></xsl:value-of>
+								</xsl:attribute>
+								</img>
+							</a>
 						</div>
 						<div class="content">
 							<ul>
@@ -56,15 +64,27 @@
 									</a></li>
 							</ul>
 						</div>
+						<div class="view-more">
+							<a>
+								<xsl:attribute name="href">
+									<xsl:value-of select="Url"></xsl:value-of>
+								</xsl:attribute>
+								<xsl:attribute name="title">
+									<xsl:value-of select="Title"></xsl:value-of>
+								</xsl:attribute>
+								<xsl:text>XEM THÊM</xsl:text>
+							</a>
+							<em class="mdi mdi-arrow-right"></em>
+						</div>
 					</div>
-				</a></div>
+				</div>
 		</xsl:if>
 
 	</xsl:template>
 	<xsl:template match="News">
 		<xsl:if test="position()>1 and position() &lt;4">
 
-			<div class="img_project"><a href="">
+			<div class="img_project">
 
 					<xsl:attribute name="href">
 						<xsl:value-of select="Url"></xsl:value-of>
@@ -91,8 +111,20 @@
 									</a></li>
 							</ul>
 						</div>
+						<div class="view-more">
+							<a>
+								<xsl:attribute name="href">
+									<xsl:value-of select="Url"></xsl:value-of>
+								</xsl:attribute>
+								<xsl:attribute name="title">
+									<xsl:value-of select="Title"></xsl:value-of>
+								</xsl:attribute>
+								<xsl:text>XEM THÊM</xsl:text>
+							</a>
+							<em class="mdi mdi-arrow-right"></em>
+						</div>
 					</div>
-				</a></div>
+				</div>
 		</xsl:if>
 
 	</xsl:template>

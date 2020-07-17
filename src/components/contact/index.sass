@@ -1,35 +1,7 @@
-.banner-contact
-	.card-img
-		.img
-			width: 100%
-			height: 400px
-			img 
-				width: 100%
-				height: 100%
-				object-fit: cover
-
-@media (max-width: 576px )
-	.banner-contact
-		.card-img
-			.img
-				width: 100%
-				height: 300px
-				img 
-					width: 100%
-					height: 100%
-
-@media (max-width: 1024px )
-	.banner-contact
-		.card-img
-			.img
-				width: 100%
-				height: 300px
-				img 
-					width: 100%
-					height: 100%
-
 .contact-form
 	padding-bottom: 62px
+	@media screen and ( max-width: 576px )
+		padding-bottom: 40px
 	.head-title
 		padding: 70px 0 30px 0
 		h2
@@ -58,6 +30,7 @@
 					top: 50%
 	.left
 		background: #e6efe9
+		padding-bottom: 60px
 		.logo
 			display: flex
 			align-items: center
@@ -91,8 +64,9 @@
 			margin: 0
 			padding: 0 10px
 		.frm-btnwrap
-			float: right
-			text-align: right
+			position: absolute
+			bottom: 28px
+			right: 0
 			@media screen and(max-width:1025px)
 				margin: 0 !important
 			@media screen and(max-width:767px)
@@ -144,6 +118,10 @@
 			textarea
 				height: 8em
 				padding: 10px 0 0 20px
+		.frm-captcha
+			display: flex
+		.RadCaptcha_Default
+			padding-left: 30px
 
 .map 
 	.map-wrapper

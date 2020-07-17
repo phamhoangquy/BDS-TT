@@ -4,6 +4,8 @@
 	background-size: cover
 	background-position: center
 	margin: 100px 0 0 0
+	@media screen and ( max-width: 576px )
+		margin: 0
 	.head-title
 		display: flex
 		padding: 80px 0 50px 0
@@ -51,6 +53,9 @@
 			font-size: 18px
 	.nav-arrow-next
 		right: -60px
+		cursor: pointer
+		&:hover
+			color: #0c6328
 		@media screen and ( max-width: 1439px)
 			right: -45px
 		@media screen and ( max-width: 1350px)
@@ -64,6 +69,7 @@
 			
 	.nav-arrow-prev
 		left: -60px
+		cursor: pointer
 		@media screen and ( max-width: 1439px)
 			left: -45px
 		@media screen and ( max-width: 1350px)
@@ -73,6 +79,7 @@
 		@media screen and ( max-width: 576px)
 			left: 0
 			top: 40px
+		
 	.swiper-container
 		margin: 0
 		@media screen and ( max-width: 1350px)

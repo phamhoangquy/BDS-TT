@@ -277,26 +277,22 @@ function newsHomeSlide(){
 			prevEl: '.home-news .nav-arrow-prev',
 		},
 		breakpointsInverse: true,
+		spaceBetween: 30,
 		breakpoints: {
 			320: {
 				slidesPerView: 1,
-				
 			},
 			480: {
 				slidesPerView: 1,
-				
 			},
 			768: {
 				slidesPerView: 1,
-				
 			},
 			1025: {
 				slidesPerView: 3,
-				spaceBetween: 50
 			},
 			1200: {
 				slidesPerView: 3,
-				
 			},
 			1440: {
 				slidesPerView: 3,
@@ -305,7 +301,6 @@ function newsHomeSlide(){
 				slidesPerView: 3,
 			},
 		},
-
 	});
 }
 
