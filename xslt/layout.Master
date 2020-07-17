@@ -21,12 +21,12 @@
 		JQueryUIThemeName="smoothness" />
 	<portal:Favicon ID="Favicon1" runat="server" />
 	<portal:ScriptLoader ID="ScriptLoader1" runat="server" />
-	<portal:SkinFolderScript ID="SkinFolderScript1" runat="server" ScriptFileName="js/plugins.min.js"
+	<!-- <portal:SkinFolderScript ID="SkinFolderScript1" runat="server" ScriptFileName="js/plugins.min.js"
 		AddToCombinedScript="true" />
 	<portal:SkinFolderScript ID="SkinFolderScript2" runat="server" ScriptFileName="js/customize.min.js"
 		AddToCombinedScript="true" />
 	<portal:SkinFolderScript ID="SkinFolderScript3" runat="server" ScriptFileName="js/canhcam.js"
-		AddToCombinedScript="true" />
+		AddToCombinedScript="true" /> -->
 	<portal:GoogleAnalyticsScript ID="GoogleAnalyticsScript1" runat="server" />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;500;600;700&display=swap"

@@ -396,8 +396,8 @@ function mappingSearch() {
 		selector: ".search-wrapper",
 		mobileWrapper: ".mobile-wrapper",
 		mobileMethod: "appendTo",
-		desktopWrapper: ".language-wrapper",
-		desktopMethod: "insertBefore",
+		desktopWrapper: ".wrapper-bottom",
+		desktopMethod: "appendTo",
 		breakpoint: 1025
 	}).watch();
 }
