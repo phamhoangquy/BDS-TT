@@ -10,32 +10,60 @@
 		list-style: non
 		li
 			width: 50px
-			height: 50px
+			height: 48px
 			background-color: #c80916
 			border-radius: 3px
-			border: solid 2px rgb(127, 216, 255)
+			border:  1px solid #ffffff
 			margin-bottom: 10px
 			display: flex
 			align-items: center
 			justify-content: center
 			transition: .3s all ease-in-out
 			cursor: pointer
+			&:first-child
+				position: relative
+				a
+					display: flex
+					justify-content: center
+					align-items: center
+					flex-direction: row-reverse
+				&:hover
+					background: $green
+				
+					.caption
+						width: auto
+						background: $green
+						height: 48px
+						border-top: 1px solid #ffffff
+						border-bottom: 1px solid #ffffff
+						border-left: 1px solid #ffffff
+						opacity: 1
 			a
 				color: #fff
 				font-size: 30px
 				font-weight: 900
+				display: block
+				.icon
+					position: absolute
+					top: 50%
+					left: 50%
+					transform: translate(-50%,-50%)
+
 				em 
 					color: #fff
 				.caption 
-					display: none
-				&:hover
-					.caption
-						display: block
-						font-size: 12px
-			@media(min-width: 1025px)
-				&:hover
-					background-color: #0b6528
-
+					padding: 0 15px
+					transition: .3s all  ease-in-out
+					font-size: r(18px)
+					font-weight: 700
+					position: absolute
+					top: 50%
+					transform: translateY(-50%)
+					right: 100%
+					display: flex
+					justify-content: center
+					align-items: center
+					opacity: 0
 	&.active
 		opacity: 0
 		visibility: hidden

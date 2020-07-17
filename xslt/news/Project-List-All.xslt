@@ -106,16 +106,11 @@
 	<xsl:template match="News" mode='Sub-1'>
 		<xsl:param name="ZoneTitle2"></xsl:param>
 		<xsl:if test="position()> 6 and position() &lt;10">
+			<div class="col-12 col-md-6 col-lg-3">
+				<div class="new-img">
+					<div class="img">
+						<a>
 
-			<div class="col-12 col-md-6 col-lg-3"><a>
-					<xsl:attribute name="href">
-						<xsl:value-of select="Url"></xsl:value-of>
-					</xsl:attribute>
-					<xsl:attribute name="title">
-						<xsl:value-of select="Title"></xsl:value-of>
-					</xsl:attribute>
-					<div class="new-img">
-						<div class="img">
 							<img>
 							<xsl:attribute name="src">
 								<xsl:value-of select="ImageUrl"></xsl:value-of>
@@ -124,20 +119,22 @@
 								<xsl:value-of select="Title"></xsl:value-of>
 							</xsl:attribute>
 							</img>
-						</div>
-						<div class="content">
-							<ul>
-								<li> <a href="">
-										<xsl:value-of disable-output-escaping="yes" select="$ZoneTitle2"></xsl:value-of>
-									</a></li>
-								<li> <a href="">
-										<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
-									</a></li>
-								<li> <a href="">XEM THÊM</a><em class="mdi mdi-arrow-right"></em></li>
-							</ul>
-						</div>
+						</a>
+
 					</div>
-				</a></div>
+					<div class="content">
+						<ul>
+							<li> <a href="">
+									<xsl:value-of disable-output-escaping="yes" select="$ZoneTitle2"></xsl:value-of>
+								</a></li>
+							<li> <a href="">
+									<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
+								</a></li>
+							<li> <a href="">XEM THÊM</a><em class="mdi mdi-arrow-right"></em></li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</xsl:if>
 	</xsl:template>
 </xsl:stylesheet>

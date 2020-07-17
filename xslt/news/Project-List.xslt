@@ -74,21 +74,21 @@
 								<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
 								<xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
 							</a></li>
-						
+
 					</ul>
 				</div>
 				<div class="view-more">
-							<a>
-								<xsl:attribute name="href">
-									<xsl:value-of select="Url"></xsl:value-of>
-								</xsl:attribute>
-								<xsl:attribute name="title">
-									<xsl:value-of select="Title"></xsl:value-of>
-								</xsl:attribute>
-								<xsl:text>XEM THÊM</xsl:text>
-							</a>
-							<em class="mdi mdi-arrow-right"></em>
-						</div>
+					<a>
+						<xsl:attribute name="href">
+							<xsl:value-of select="Url"></xsl:value-of>
+						</xsl:attribute>
+						<xsl:attribute name="title">
+							<xsl:value-of select="Title"></xsl:value-of>
+						</xsl:attribute>
+						<xsl:text>XEM THÊM</xsl:text>
+					</a>
+					<em class="mdi mdi-arrow-right"></em>
+				</div>
 			</div>
 		</xsl:if>
 
@@ -136,21 +136,21 @@
 									<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
 									<xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
 								</a></li>
-							
+
 						</ul>
 					</div>
 					<div class="view-more">
-							<a>
-								<xsl:attribute name="href">
-									<xsl:value-of select="Url"></xsl:value-of>
-								</xsl:attribute>
-								<xsl:attribute name="title">
-									<xsl:value-of select="Title"></xsl:value-of>
-								</xsl:attribute>
-								<xsl:text>XEM THÊM</xsl:text>
-							</a>
-							<em class="mdi mdi-arrow-right"></em>
-						</div>
+						<a>
+							<xsl:attribute name="href">
+								<xsl:value-of select="Url"></xsl:value-of>
+							</xsl:attribute>
+							<xsl:attribute name="title">
+								<xsl:value-of select="Title"></xsl:value-of>
+							</xsl:attribute>
+							<xsl:text>XEM THÊM</xsl:text>
+						</a>
+						<em class="mdi mdi-arrow-right"></em>
+					</div>
 				</div>
 			</div>
 		</xsl:if>
@@ -161,6 +161,8 @@
 		<xsl:if test="position()> 6 and position() &lt;10">
 
 			<div class="col-12 col-md-6 col-lg-3">
+				<a>
+
 					<xsl:if test="SubTitle !=''">
 						<xsl:attribute name="href">
 							<xsl:value-of select="SubTitle"></xsl:value-of>
@@ -195,7 +197,7 @@
 										<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
 										<xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
 									</a></li>
-								
+
 							</ul>
 						</div>
 						<div class="view-more">
@@ -211,7 +213,8 @@
 							<em class="mdi mdi-arrow-right"></em>
 						</div>
 					</div>
-				</div>
+				</a>
+			</div>
 		</xsl:if>
 	</xsl:template>
 </xsl:stylesheet>
