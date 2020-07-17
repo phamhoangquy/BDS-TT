@@ -13,45 +13,15 @@
 		.card-body
 			.img 
 				+img-ratio(450/600)
-	.head-title
-		display: flex
-		justify-content: space-between
-		margin-bottom: 40px
-		@media screen and ( max-width: 576px )
-			margin: 0
-		h2 
-			font-size: 48px
-		@media screen and ( max-width: 1024px )
-			font-size: 30px
-			// padding: 30px 0 30px 0
-		@media screen and ( max-width: 576px )
-			// padding: 30px 0 30px 0
-			h2
-				font-size: 28px
 		.Module 
 			width: 100%
-		.ModuleContent
-			display: flex
-			justify-content: space-between
-			align-items: center
-			@media screen and ( max-width:  767px)
-				flex-direction: column
-				align-items: start
-				
-		&.line
-			padding-left: 90px
-			position: relative
-			&::before
-				content: ''
-				width: 71px
-				height: 1px
-				background: #c80916
-				position: absolute
-				top: 57%
-				transform: translateY(-50%)
-				left: 0
-				@media screen and ( max-width:1024px )
-					top: 50%
+		// .ModuleContent
+		// 	display: flex
+		// 	justify-content: space-between
+		// 	align-items: center
+		// 	@media screen and ( max-width:  767px)
+		// 		flex-direction: column
+		// 		align-items: start
 		.tab-panels
 			display: flex
 			align-items: center
