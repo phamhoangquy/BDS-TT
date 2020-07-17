@@ -20,16 +20,16 @@
 			justify-content: center
 			transition: .3s all ease-in-out
 			cursor: pointer
+			em
+				color: #ffffff
 			&:first-child
 				position: relative
-				a
-					display: flex
-					justify-content: center
-					align-items: center
-					flex-direction: row-reverse
+				display: flex
+				justify-content: center
+				align-items: center
+				flex-direction: row-reverse
 				&:hover
 					background: $green
-				
 					.caption
 						width: auto
 						background: $green
@@ -38,32 +38,32 @@
 						border-bottom: 1px solid #ffffff
 						border-left: 1px solid #ffffff
 						opacity: 1
-			a
+			.icon
 				color: #fff
 				font-size: 30px
 				font-weight: 900
 				display: block
-				.icon
-					position: absolute
-					top: 50%
-					left: 50%
-					transform: translate(-50%,-50%)
-
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%,-50%)
 				em 
 					color: #fff
-				.caption 
-					padding: 0 15px
-					transition: .3s all  ease-in-out
-					font-size: r(18px)
-					font-weight: 700
-					position: absolute
-					top: 50%
-					transform: translateY(-50%)
-					right: 100%
-					display: flex
-					justify-content: center
-					align-items: center
-					opacity: 0
+			.caption 
+				padding: 0 15px
+				transition: .3s all  ease-in-out
+				font-size: r(18px)
+				font-weight: 700
+				position: absolute
+				top: 50%
+				transform: translateY(-50%)
+				right: 100%
+				display: flex
+				justify-content: center
+				align-items: center
+				opacity: 0
+				*
+					color: #ffffff
 	&.active
 		opacity: 0
 		visibility: hidden
