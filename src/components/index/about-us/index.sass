@@ -1,8 +1,9 @@
 .about-us
-	padding: 100px 0 100px 0
-	@media screen and ( max-width: 576px )
-		padding-top: 30px
-		padding-bottom: 30px
+	padding: 100px 0
+	@media screen and ( max-width: 1024px)
+		padding: 50px 0
+		
+
 	.head-title
 		padding: 0 0 50px 0
 		h2
@@ -77,6 +78,20 @@
 					font-size: 14px
 					text-align: left
 					font-weight: 600
+			@media screen and ( max-width: 767px)
+				display: flex
+				flex-wrap: wrap
+				flex:  0 0 100%
+				max-width: 100%
+				li
+					flex: 0 0 50%
+					max-width: 50%
+					margin-bottom: 30px
+					display: flex
+					flex-direction: column
+					justify-content: center
+					align-items: center
+				
 	
 	.card_img 
 		.img

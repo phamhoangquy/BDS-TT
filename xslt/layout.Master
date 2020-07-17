@@ -60,10 +60,6 @@
 							<div class="contact-wrapper">
 								<portal:modulewrapper id="mdl153" runat="server" configuremoduleid="153" />
 							</div>
-							<div class="mail-wrapper"></div>
-							<div class="search-wrapper">
-
-							</div>
 							<div class="language-wrapper">
 								<portal:modulewrapper id="mdl154" runat="server" configuremoduleid="154" />
 							</div>
@@ -71,10 +67,10 @@
 						</div>
 						<div class="wrapper-bottom">
 							<portal:ModuleWrapper ID="mdl146" runat="server" ConfigureModuleId="146" />
-								<div class="search-wrapper">
-									<div class="search-toggle"><em class="mdi mdi-magnify"> </em></div>
-									<portal:ModuleWrapper ID="mdl231" runat="server" ConfigureModuleId="231" />
-								</div>
+							<div class="search-wrapper">
+								<div class="search-toggle"><em class="mdi mdi-magnify"> </em></div>
+								<portal:ModuleWrapper ID="mdl231" runat="server" ConfigureModuleId="231" />
+							</div>
 						</div>
 					</div>
 					<div class="mobile-wrapper"></div>
@@ -229,12 +225,12 @@
 				}
 
 			</script>
-			
+
 		</portal:AutoHidePanel>
 		<portal:Woopra ID="woopra11" runat="server" />
 	</form>
-		<script src="/Data/Sites/1/skins/default/js/core.min.js"></script>
-		<script src="/Data/Sites/1/skins/default/js/main.min.js"></script>
+	<script src="/Data/Sites/1/skins/default/js/core.min.js"></script>
+	<script src="/Data/Sites/1/skins/default/js/main.min.js"></script>
 </body>
 
 </html>
