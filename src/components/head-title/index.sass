@@ -3,6 +3,22 @@
 		padding: 70px 0 35px 0
 		h2
 			font-size: 48px
+			&.line
+				padding-left: 90px
+				position: relative
+				&::before
+					content: ''
+					width: 71px
+					height: 1px
+					background: #c80916
+					position: absolute
+					top: 60%
+					transform: translateY(-50%)
+					left: 0
+					@media screen and ( max-width:1024px )
+						top: 50%
+					@media screen and ( max-width:576px )
+						top: 50%
 		@media screen and ( max-width: 1024px )
 			padding: 30px 0 30px 0
 			h2 
@@ -10,22 +26,6 @@
 		@media screen and ( max-width: 576px )
 			h2
 				font-size: 26px
-		&.line
-			padding-left: 90px
-			position: relative
-			&::before
-				content: ''
-				width: 71px
-				height: 1px
-				background: #c80916
-				position: absolute
-				top: 60%
-				transform: translateY(-50%)
-				left: 0
-				@media screen and ( max-width:1024px )
-					top: 50%
-				@media screen and ( max-width:576px )
-					top: 50%
 	.title
 		padding-bottom: 50px
 		ul 
