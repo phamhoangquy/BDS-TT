@@ -49,10 +49,8 @@
 			position: absolute
 			bottom: 28px
 			right: 0
-			@media screen and ( max-width: 1200px )
-				bottom: -25px
-			@media screen and(max-width:1025px)
-				margin: 0 !important
+			// @media screen and(max-width:1025px)
+			// 	margin: 0 !important
 			@media screen and(max-width:767px)
 				position: static
 				display: block
@@ -80,8 +78,6 @@
 				font-size: 13px
 				&.fa-exclamation-triangle
 					color: firebrick
-			@media screen and(max-width:1025px)
-				padding: 0 0
 			input,textarea
 				padding-left: 20px
 				border: 1px solid #f3f3f3
@@ -110,18 +106,30 @@
 			.frm-captcha-input
 				order: 2
 				@media screen and ( max-width: 1200px )
+					display: flex
+					justify-content: space-between
+					align-items: center
+					padding-left: 20px
+					width: 40%
+				@media screen and ( max-width: 576px )
+					display: flex
+					justify-content: space-between
+					align-items: center
+					padding-left: 20px
 					width: 100%
 				@media screen and ( max-width: 576px )
 					padding-top: 30px
+					order: 1
 		.RadCaptcha_Default
 			width: 25%
+			max-width: 25%
 			@media screen and ( max-width: 576px )
 				flex: 0 0 100%
 				max-width: 100%
-			
+
 .map
 	padding-top: 60px
 	@media screen and ( max-width: 576px )
-		padding-top: 30px
+		padding-top: 60px
 	.map-wrapper
 		padding-bottom: 80px

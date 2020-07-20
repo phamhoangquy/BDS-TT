@@ -9,7 +9,6 @@ $(document).ready(function () {
 	mappingMenu();
 	mappingContact();
 	mappingSearch();
-
 	setBackground();
 	coutingNumber();
 	tabActive();
@@ -42,17 +41,12 @@ function linkAbout(){
 function toggleSearch() {
 	let button = $(".search-toggle");
 	let search = $(".searchbox");
-
-
-
 	button.on("click", function () {
 		if (search.hasClass('active')) {
 			search.removeClass('active')
 		} else {
 			search.addClass('active')
 		}
-
-
 	});
 
 }
@@ -501,8 +495,6 @@ function coutingNumber(){
 		});
 	});
 }
-
-
 
 function appendComment() {
 	if ($("body").hasClass('product-detail-page')) {
