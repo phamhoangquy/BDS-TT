@@ -3,3 +3,80 @@
 		display: none
 		&.active
 			display: block
+.head-title
+	margin-bottom: 40px
+	h2 
+		font-size: 48px
+		position: relative
+		&::before
+			content: ''
+			width: 71px
+			height: 1px
+			background: #c80916
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			left: -90px
+			@media screen and ( max-width:1024px )
+				top: 50%
+			@media screen and ( max-width:  576px)
+				width: 45px
+				left: -60px
+
+	@media screen and ( max-width: 576px )
+		margin-bottom: 20px
+		h2 
+			font-size: 25px
+	&.line
+		padding-left: 90px
+		@media screen and ( max-width:  576px)
+			padding-left: 60px
+			
+.head-title-zone
+	padding-top: 60px
+	@media screen and ( max-width:  1024px)
+		padding-top: 50px
+		
+	.title
+		margin-bottom: 40px
+		@media screen and ( max-width:  1024px)
+			margin-bottom: 30px
+			overflow-x: auto
+			
+		ul
+			list-style-type: none
+			padding: 0
+			@media screen and ( max-width:  1024px)
+				white-space: nowrap
+				display: flex 
+				justify-content: flex-start
+				align-items: center
+				
+		li
+			display: inline-block
+			&:not(:last-child)
+				margin-right: 10px
+			&.active
+				a
+					color: #0b6528
+					text-decoration: underline
+			a
+				font-weight: 600
+				color: #333333
+.link-to-section
+	ul
+		list-style-type: none
+		padding: 0
+		li
+			display: inline-block
+			&:not(:last-child)
+				margin-right: 10px
+			&.active
+				a
+					color: #0b6528
+					text-decoration: underline
+			a
+				display: inline-block
+				padding: 10px 0
+				font-weight: 600
+				color: #333333

@@ -1,20 +1,36 @@
 .about
 	padding-bottom: 60px
+	.head-title
+		padding: 60px 0 0 0
 	.head-menu
 		display: flex
 		align-items: center
 		justify-content: center
 		border-bottom: 1px solid #f5f5f5
+		overflow-x: auto
+		@media screen and ( max-width:  1024px)
+			justify-content: start
+			
 		ul 
 			list-style: none
 			padding: 0
 			display: flex
-			li 
+			white-space: nowrap
+			li
+				&.active
+					a
+						color: $green
+						height: 100%
+						border-bottom: 1px solid $green
+				&:hover
+					a
+						color: $green
 				padding-right: 30px
 				a 
+					padding: 10px 0
+					display: inline-block
 					font-size: 18px
-					&:hover
-						color: #0b6528
+					transition: .3s all  ease-in-out
 			@media screen and ( max-width:576px)
 				display: flex
 				align-items: center
@@ -26,7 +42,8 @@
 		.img 
 			img 
 				width: 100%
-				height: 439px
+				max-width: 100%
+				height: auto
 
 	.content
 		@media screen and ( max-width: 1024px )
@@ -39,17 +56,14 @@
 		@media screen and ( max-width: 576px)
 			padding-top: 30px
 		@media screen and ( max-width: 1024px)
-			padding-top: 30px
+			padding: 30px 0
 		ul 
 			list-style: none
 			display: flex
-			padding: 10px 60px
-			flex-wrap: wrap
+			padding: 0
 			li 
 				margin-right: auto
 				position: relative
-				max-width: 45%
-				flex: 0 0 45%
 				&::after 
 					content: ''
 					position: absolute
@@ -62,10 +76,24 @@
 					color: #c80916
 					span
 						font-size: 36px
-						
+
 				span 
 					font-size: 14px
+					text-align: left
 					font-weight: 600
+			@media screen and ( max-width: 767px)
+				display: flex
+				flex-wrap: wrap
+				flex:  0 0 100%
+				max-width: 100%
+				li
+					flex: 0 0 50%
+					max-width: 50%
+					margin-bottom: 30px
+					display: flex
+					flex-direction: column
+					justify-content: center
+					align-items: center
 	
 
 // section vision & mission
@@ -105,9 +133,10 @@
 					left: 0
 					top: 10px
 					z-index: 9
+					font-size: 14px
 					transition: .3s all ease-in-out
-					font-family: "Linearicons-Free"
-					content: '\e876'
+					font-family: "Material Design Icons"
+					content: '\f142'
 				em 
 					font-size: 12px
 				p 
@@ -116,7 +145,7 @@
 
 // section value
 .value
-	padding-bottom: 60px
+	padding: 60px 0
 	.card_img
 		position: relative
 		padding-top: 30px
@@ -150,7 +179,10 @@
 	background-repeat: no-repeat
 	background-size: cover
 	background-position: center
-	padding-bottom: 80px
+	padding: 60px 0 80px 0
+	@media screen and ( max-width:  1024px)
+		padding: 40px 0 60px 0
+		
 	.text
 		color: #ffffff
 		padding: 0 0 70px 0
@@ -169,10 +201,15 @@
 		p 
 			color: #ffffff
 			text-align: center
+	.head-title
+		h2
+			color: #ffffff
 
 // section choose-tan-thinh
 .choose-tan-thinh
-	padding-bottom: 80px
+	padding: 60px 0 80px 0
+	@media screen and ( max-width:  1024px)
+		padding: 40px 0 60px 0
 	.background
 		position: relative
 		.img 

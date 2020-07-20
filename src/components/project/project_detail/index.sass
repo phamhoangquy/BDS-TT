@@ -4,10 +4,21 @@
 		align-items: center
 		justify-content: center
 		border-bottom: 1px solid #f5f5f5
+		@media screen and ( max-width:  1024px)
+			overflow-x: auto
+			justify-content: flex-start
+			
 		ul 
+			
 			list-style: none
 			padding: 0
 			display: flex
+			@media screen and ( max-width:  1024px)
+				display: flex
+				justify-content: flex-start
+				align-items: center
+				white-space: nowrap
+				
 			li 
 				padding-right: 30px
 				a 
@@ -18,7 +29,7 @@
 			@media screen and ( max-width:576px)
 				display: flex
 				align-items: center
-				justify-content: center
+				justify-content: flex-start
 				li 
 					text-align: center
 
@@ -226,10 +237,10 @@
 
 // section
 .text-utilities
-	padding-top: 60px
+	padding: 60px 0
 	background: #f9f9f9
 	@media screen and ( max-width: 576px )
-		padding: 0
+		padding: 50px 0
 	.title
 		h3
 			text-align: center

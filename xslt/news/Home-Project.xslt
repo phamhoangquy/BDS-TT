@@ -20,64 +20,58 @@
 
 			<div class="col-lg-8">
 
-					<xsl:attribute name="href">
-						<xsl:value-of select="Url"></xsl:value-of>
-					</xsl:attribute>
-					<xsl:attribute name="title">
-						<xsl:value-of select="Title"></xsl:value-of>
-					</xsl:attribute>
+				<xsl:attribute name="href">
+					<xsl:value-of select="Url"></xsl:value-of>
+				</xsl:attribute>
+				<xsl:attribute name="title">
+					<xsl:value-of select="Title"></xsl:value-of>
+				</xsl:attribute>
 
-					<div class="card-body">
-						<div class="img">
-							<a>
+				<div class="card-body">
+					<div class="img">
+						<a>
+							<xsl:if test="SubTitle !=''">
 								<xsl:attribute name="href">
-									<xsl:value-of select="Url"></xsl:value-of>
+									<xsl:value-of select="SubTitle"></xsl:value-of>
 								</xsl:attribute>
-								<xsl:attribute name="title">
-									<xsl:value-of select="Title"></xsl:value-of>
-								</xsl:attribute>
-								<img>
-								<xsl:attribute name="src">
-									<xsl:value-of select="ImageUrl"></xsl:value-of>
-								</xsl:attribute>
-								<xsl:attribute name="alt">
-									<xsl:value-of select="Title"></xsl:value-of>
-								</xsl:attribute>
-								</img>
-							</a>
-						</div>
-						<div class="content">
-							<ul>
-								<li> <a href="">
-										<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
-									</a></li>
-								<li> <a href="">
-										<xsl:attribute name="href">
-											<xsl:value-of select="Url"></xsl:value-of>
-										</xsl:attribute>
-										<xsl:attribute name="title">
-											<xsl:value-of select="Title"></xsl:value-of>
-										</xsl:attribute>
-										<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
-										<xsl:value-of select="EditLink" disable-output-escaping="yes">
-										</xsl:value-of>
-									</a></li>
-							</ul>
-						</div>
-						<div class="view-more">
-							<a>
-								<xsl:attribute name="href">
-									<xsl:value-of select="Url"></xsl:value-of>
-								</xsl:attribute>
-								<xsl:attribute name="title">
-									<xsl:value-of select="Title"></xsl:value-of>
-								</xsl:attribute>
-								<xsl:text>XEM THÊM</xsl:text>
-							</a>
-							<em class="mdi mdi-arrow-right"></em>
-						</div>
+							</xsl:if>
+							<xsl:attribute name="title">
+								<xsl:value-of select="Title"></xsl:value-of>
+							</xsl:attribute>
+							<img>
+							<xsl:attribute name="src">
+								<xsl:value-of select="ImageUrl"></xsl:value-of>
+							</xsl:attribute>
+							<xsl:attribute name="alt">
+								<xsl:value-of select="Title"></xsl:value-of>
+							</xsl:attribute>
+							</img>
+						</a>
+					</div>
+					<div class="content">
+						<ul>
+							<li> <a href="">DỰ ÁN TRIỂN KHAI </a>
+							</li>
+							<li><a href="">
+									<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
+									<xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
+								</a></li>
+						</ul>
+					</div>
+					<div class="view-more">
+						<a>
+							<xsl:attribute name="href">
+								<xsl:value-of select="Url"></xsl:value-of>
+							</xsl:attribute>
+							<xsl:attribute name="title">
+								<xsl:value-of select="Title"></xsl:value-of>
+							</xsl:attribute>
+							<xsl:text>XEM THÊM</xsl:text>
+						</a>
+						<em class="mdi mdi-arrow-right"></em>
 					</div>
 				</div>
+			</div>
 		</xsl:if>
 
 	</xsl:template>
@@ -86,15 +80,26 @@
 
 			<div class="img_project">
 
-					<xsl:attribute name="href">
-						<xsl:value-of select="Url"></xsl:value-of>
-					</xsl:attribute>
-					<xsl:attribute name="title">
-						<xsl:value-of select="Title"></xsl:value-of>
-					</xsl:attribute>
+				<xsl:attribute name="href">
+					<xsl:value-of select="Url"></xsl:value-of>
+				</xsl:attribute>
+				<xsl:attribute name="title">
+					<xsl:value-of select="Title"></xsl:value-of>
+				</xsl:attribute>
 
-					<div class="new-img">
-						<div class="img"><img>
+				<div class="new-img">
+					<div class="img">
+
+						<a>
+							<xsl:if test="SubTitle !=''">
+								<xsl:attribute name="href">
+									<xsl:value-of select="SubTitle"></xsl:value-of>
+								</xsl:attribute>
+							</xsl:if>
+							<xsl:attribute name="title">
+								<xsl:value-of select="Title"></xsl:value-of>
+							</xsl:attribute>
+							<img>
 							<xsl:attribute name="src">
 								<xsl:value-of select="ImageUrl"></xsl:value-of>
 							</xsl:attribute>
@@ -102,29 +107,33 @@
 								<xsl:value-of select="Title"></xsl:value-of>
 							</xsl:attribute>
 							</img>
-						</div>
-						<div class="content">
-							<ul>
-								<li> <a href="">DỰ ÁN TRIỂN KHAI </a><a href="">
-										<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
-										<xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
-									</a></li>
-							</ul>
-						</div>
-						<div class="view-more">
-							<a>
-								<xsl:attribute name="href">
-									<xsl:value-of select="Url"></xsl:value-of>
-								</xsl:attribute>
-								<xsl:attribute name="title">
-									<xsl:value-of select="Title"></xsl:value-of>
-								</xsl:attribute>
-								<xsl:text>XEM THÊM</xsl:text>
-							</a>
-							<em class="mdi mdi-arrow-right"></em>
-						</div>
+						</a>
+
+					</div>
+					<div class="content">
+						<ul>
+							<li> <a href="">DỰ ÁN TRIỂN KHAI </a>
+							</li>
+							<li><a href="">
+									<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
+									<xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
+								</a></li>
+						</ul>
+					</div>
+					<div class="view-more">
+						<a>
+							<xsl:attribute name="href">
+								<xsl:value-of select="Url"></xsl:value-of>
+							</xsl:attribute>
+							<xsl:attribute name="title">
+								<xsl:value-of select="Title"></xsl:value-of>
+							</xsl:attribute>
+							<xsl:text>XEM THÊM</xsl:text>
+						</a>
+						<em class="mdi mdi-arrow-right"></em>
 					</div>
 				</div>
+			</div>
 		</xsl:if>
 
 	</xsl:template>

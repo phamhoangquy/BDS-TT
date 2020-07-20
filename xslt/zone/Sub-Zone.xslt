@@ -4,7 +4,7 @@
 	<xsl:output method="html" indent="yes" />
 
 	<xsl:template match="/">
-		<section class="head-title">
+		<section class="head-title-zone">
 			<div class="container">
 				<div class="head-title ">
 					<h2>

@@ -1,4 +1,41 @@
 footer
+	.social-network-share
+		display: flex
+		.icon
+			display: flex
+			a
+				display: flex
+				justify-content: center
+				align-items: center
+				width: 35px
+				height: 20px
+				margin-right: 5px
+				&:first-child
+					background: #3b5998
+				&:nth-child(2)
+					background: #00abec
+				&:nth-child(3)
+					background: red
+				em
+					font-size: 11px
+					height: 11px
+					line-height: 11px
+					color: #ffffff
+					&::before
+						height: 11px
+						line-height: 11px
+	.bottom-wrapper-news-detail
+		padding-top: 50px
+		display: flex 
+		justify-content: space-between
+		align-items: center
+		p 
+			color: #ffffff
+			font-size: 12px
+			font-weight: 600
+			padding-right: 20px
+		.ModuleContent
+			display: flex
 	.footer-block
 		width: 100%
 		background-image: url('../img/footer.png')
@@ -22,11 +59,13 @@ footer
 					color: #fff
 					padding-bottom: 25px
 					text-transform: uppercase
+					text-align: left
 				
 			.card_body
 				p
 					font-size: 12px
 					color: #ffffff
+					text-align: left
 				ul 
 					padding: 0
 					list-style: none
@@ -82,43 +121,7 @@ footer
 								color: #c80916
 								font-size: 18px
 
-			.social-network-share
-				display: flex
-			.icon
-				display: flex
-				a
-					display: flex
-					justify-content: center
-					align-items: center
-					width: 35px
-					height: 20px
-					margin-right: 5px
-					&:first-child
-						background: #3b5998
-					&:nth-child(2)
-						background: #00abec
-					&:nth-child(3)
-						background: red
-					em
-						font-size: 11px
-						height: 11px
-						line-height: 11px
-						color: #ffffff
-						&::before
-							height: 11px
-							line-height: 11px
-			.bottom-wrapper-news-detail
-				padding-top: 50px
-				display: flex 
-				justify-content: space-between
-				align-items: center
-				p 
-					color: #ffffff
-					font-size: 12px
-					font-weight: 600
-					padding-right: 20px
-				.ModuleContent
-					display: flex
+			
 				
 			@media(max-width: 768.98px)
 				margin-top: 15px !important

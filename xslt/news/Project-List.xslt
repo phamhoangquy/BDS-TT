@@ -65,30 +65,21 @@
 								<xsl:value-of disable-output-escaping="yes" select="$ZoneTitle"></xsl:value-of>
 							</a></li>
 						<li> <a href="">
-								<xsl:attribute name="href">
-									<xsl:value-of select="Url"></xsl:value-of>
-								</xsl:attribute>
-								<xsl:attribute name="title">
-									<xsl:value-of select="Title"></xsl:value-of>
-								</xsl:attribute>
+
 								<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
 								<xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
 							</a></li>
 
 					</ul>
+					<div class="view-more">
+						<a>
+
+							<xsl:text>XEM THÊM</xsl:text>
+						</a>
+						<em class="mdi mdi-arrow-right"></em>
+					</div>
 				</div>
-				<div class="view-more">
-					<a>
-						<xsl:attribute name="href">
-							<xsl:value-of select="Url"></xsl:value-of>
-						</xsl:attribute>
-						<xsl:attribute name="title">
-							<xsl:value-of select="Title"></xsl:value-of>
-						</xsl:attribute>
-						<xsl:text>XEM THÊM</xsl:text>
-					</a>
-					<em class="mdi mdi-arrow-right"></em>
-				</div>
+
 			</div>
 		</xsl:if>
 
@@ -127,12 +118,7 @@
 									<xsl:value-of disable-output-escaping="yes" select="$ZoneTitle1"></xsl:value-of>
 								</a></li>
 							<li> <a href="">
-									<xsl:attribute name="href">
-										<xsl:value-of select="Url"></xsl:value-of>
-									</xsl:attribute>
-									<xsl:attribute name="title">
-										<xsl:value-of select="Title"></xsl:value-of>
-									</xsl:attribute>
+
 									<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
 									<xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
 								</a></li>
@@ -141,12 +127,7 @@
 					</div>
 					<div class="view-more">
 						<a>
-							<xsl:attribute name="href">
-								<xsl:value-of select="Url"></xsl:value-of>
-							</xsl:attribute>
-							<xsl:attribute name="title">
-								<xsl:value-of select="Title"></xsl:value-of>
-							</xsl:attribute>
+
 							<xsl:text>XEM THÊM</xsl:text>
 						</a>
 						<em class="mdi mdi-arrow-right"></em>
@@ -188,31 +169,22 @@
 										<xsl:value-of disable-output-escaping="yes" select="$ZoneTitle2"></xsl:value-of>
 									</a></li>
 								<li> <a href="">
-										<xsl:attribute name="href">
-											<xsl:value-of select="Url"></xsl:value-of>
-										</xsl:attribute>
-										<xsl:attribute name="title">
-											<xsl:value-of select="Title"></xsl:value-of>
-										</xsl:attribute>
+
 										<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
 										<xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
 									</a></li>
 
 							</ul>
-						</div>
-						<div class="view-more">
-							<a>
-								<xsl:attribute name="href">
-									<xsl:value-of select="Url"></xsl:value-of>
-								</xsl:attribute>
-								<xsl:attribute name="title">
-									<xsl:value-of select="Title"></xsl:value-of>
-								</xsl:attribute>
-								<xsl:text>XEM THÊM</xsl:text>
-							</a>
-							<em class="mdi mdi-arrow-right"></em>
+							<div class="view-more">
+								<a>
+
+									<xsl:text>XEM THÊM</xsl:text>
+								</a>
+								<em class="mdi mdi-arrow-right"></em>
+							</div>
 						</div>
 					</div>
+
 				</a>
 			</div>
 		</xsl:if>

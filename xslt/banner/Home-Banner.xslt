@@ -37,7 +37,7 @@
 					<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
 				</h2>
 				<div class="text">
-					<xsl:value-of disable-output-escaping="yes" select="Content"></xsl:value-of>
+					<xsl:value-of disable-output-escaping="yes" select="Description"></xsl:value-of>
 				</div>
 			</div>
 		</div>

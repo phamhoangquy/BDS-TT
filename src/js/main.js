@@ -18,9 +18,27 @@ $(document).ready(function () {
 	toggleComment();
 	appendRecruit();
 	toggleApplyForm();
+	linkAbout();
 
 });
 
+function linkAbout(){
+		$(".link-to-about-section a").on("click", function (event) {
+			if (this.hash !== "") {
+				let offset =
+					$("header").outerHeight() ;
+				var hash = this.hash;
+				$("html, body").animate({
+						scrollTop: $(hash).offset().top - offset,
+					},
+					800,
+					function () {
+						window.location.hash = hash;
+					}
+				);
+			} // End if
+		});
+}
 function toggleSearch() {
 	let button = $(".search-toggle");
 	let search = $(".searchbox");

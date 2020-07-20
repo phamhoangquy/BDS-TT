@@ -8,14 +8,24 @@
 	</xsl:template>
 
 	<xsl:template match="Zone">
-		<xsl:if test="position()=1">
-			<section class="about">
+		<xsl:if test="position()=1" >
+			<section class="about" id='section-about-1'>
 				<div class="container">
+						<div class="head-menu">
+							<ul class='link-to-about-section'>
+								<li> <a href="#section-about-1">Giới thiệu</a></li>
+								<li> <a href="#section-about-2">Tầm nhìn &amp; Sứ mệnh</a></li>
+								<li> <a href="#section-about-3">Giá trị cốt lõi</a></li>
+								<li> <a href="#section-about-4">Giải thưởng</a></li>
+								<li> <a href="#section-about-5">Tại sao chọn</a></li>
+							</ul>
+						</div>
 					<div class="head-title line">
 						<h2>
 							<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
 						</h2>
 					</div>
+				
 					<div class="row">
 						<xsl:apply-templates select="News" mode='News-1'></xsl:apply-templates>
 					</div>
@@ -23,7 +33,7 @@
 			</section>
 		</xsl:if>
 		<xsl:if test="position()=2">
-			<section class="vision-mission">
+			<section class="vision-mission" id='section-about-2'>
 				<div class="container">
 					<div class="head-title line">
 						<h2>
@@ -40,7 +50,7 @@
 			</section>
 		</xsl:if>
 		<xsl:if test="position()=3">
-			<section class="value">
+			<section class="value" id='section-about-3'>
 				<div class="container">
 					<div class="head-title line">
 						<h2>
@@ -54,7 +64,7 @@
 			</section>
 		</xsl:if>
 		<xsl:if test="position()=4">
-			<section class="prize">
+			<section class="prize" id='section-about-4'>
 				<div class="container">
 					<div class="head-title line">
 						<h2>
@@ -74,7 +84,7 @@
 			</section>
 		</xsl:if>
 		<xsl:if test="position()=5">
-			<section class="choose-tan-thinh">
+			<section class="choose-tan-thinh" id='section-about-5'>
 				<div class="container">
 					<div class="head-title line">
 						<h2>
@@ -91,14 +101,7 @@
 		<div class="col-lg-6">
 			<div class="card_img">
 				<div class="img">
-					<img>
-					<xsl:attribute name="src">
-						<xsl:value-of select="ImageUrl"></xsl:value-of>
-					</xsl:attribute>
-					<xsl:attribute name="alt">
-						<xsl:value-of select="Title"></xsl:value-of>
-					</xsl:attribute>
-					</img>
+					<xsl:value-of disable-output-escaping="yes" select="BriefContent"></xsl:value-of>
 				</div>
 			</div>
 		</div>
