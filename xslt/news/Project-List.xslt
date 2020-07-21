@@ -33,9 +33,7 @@
 	<xsl:template match="News" mode='Main'>
 		<xsl:param name="ZoneTitle"></xsl:param>
 		<xsl:if test="position()=1">
-
 			<div class="card-body">
-
 				<div class="img">
 					<a>
 						<xsl:if test="SubTitle !=''">
@@ -55,13 +53,10 @@
 						</xsl:attribute>
 						</img>
 					</a>
-
 				</div>
 				<div class="content">
 					<ul>
 						<li> <a href="">
-
-
 								<xsl:value-of disable-output-escaping="yes" select="$ZoneTitle"></xsl:value-of>
 							</a></li>
 						<li> <a href="">
@@ -69,7 +64,6 @@
 								<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
 								<xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
 							</a></li>
-
 					</ul>
 					<div class="view-more">
 						<a>
@@ -79,7 +73,6 @@
 						<em class="mdi mdi-arrow-right"></em>
 					</div>
 				</div>
-
 			</div>
 		</xsl:if>
 
@@ -87,7 +80,6 @@
 	<xsl:template match="News" mode='Sub'>
 		<xsl:param name="ZoneTitle1"></xsl:param>
 		<xsl:if test="position()> 1 and position() &lt; 6">
-
 			<div class="col-12 col-md-6 col-lg-6">
 				<div class="new-img">
 					<div class="img">
@@ -110,7 +102,6 @@
 							</xsl:attribute>
 							</img>
 						</a>
-
 					</div>
 					<div class="content">
 						<ul>
