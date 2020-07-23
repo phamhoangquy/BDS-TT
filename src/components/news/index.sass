@@ -55,12 +55,17 @@
 					bottom: 23%
 			.title
 				padding-bottom: 15px
-				
 				a
 					font-size: 11mre
 					color: #333333
 					font-weight: 600
 					height: 41px
+					// overflow: hidden
+					display: -webkit-box
+					text-overflow: ellipsis
+					-webkit-box-orient: vertical
+					&-2
+						-webkit-line-clamp: 2
 			.watch-all
 				a 
 					font-size: 12px

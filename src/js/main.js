@@ -456,8 +456,6 @@ function watchMoreDetail() {
             });
         }
     });
-
-
 }
 
 function sideNavigation() {
@@ -495,7 +493,6 @@ function coutingNumber() {
                 $this.text(this.countNum);
                 //alert('finished');
             }
-
         });
     });
 }
