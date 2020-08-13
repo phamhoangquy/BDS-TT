@@ -134,13 +134,14 @@
 			text-align: center
 	.caption-title
 		font-size: 1.125rem
-		font-weight: 700
+		// font-weight: 700
 		line-height: 1.175
 		text-align: center
 		p 
 			text-align: center
 			color: #ffffff
 			padding-top: 30px
+			font-weight: 100
 	.location-silde
 		padding-top: 65px
 		.card
@@ -247,9 +248,11 @@
 			color: #c80916
 			font-size: 18px
 			font-weight: 600
-		h4 
+		h4
 			padding-top: 30px
+			padding-bottom: 30px
 			font-size: 24px
+			font-weight: 600
 	.caption 
 		padding-top: 30px
 		padding-bottom: 30px
@@ -260,8 +263,22 @@
 			@media screen and ( max-width: 576px )
 				text-align: justify
 	.content 
-		padding-top: 30px
-		p 
+		// padding-top: 30px
+		height: 350px
+		overflow-y: scroll
+		scrollbar-width: thin
+		scrollbar-color: #c80916
+		&::-webkit-scrollbar
+			background: #c80916
+			width: 5px
+		&::-webkit-scrollbar-track
+			-webkit-box-shadow: inset 0 0 6px #b2b2b2
+			background-color: #b2b2b2
+		&::-webkit-scrollbar-thumb
+			background-color: #c80916
+		p
+			&:nth-child(2)
+				padding: 15px 0 15px 0
 			@media screen and ( max-width:576px)
 				text-align: justify
 	.news-suncity

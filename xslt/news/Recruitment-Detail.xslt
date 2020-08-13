@@ -56,7 +56,8 @@
 										<div class="btn  button-apply"> <a href="javascript:void(0)">Ứng tuyển
 												ngay</a>
 										</div>
-										<div class="btn  button-download"><a target="_blank">
+										<div class="btn  button-download">
+											<a>
 												<xsl:attribute name="href">
 													<xsl:value-of select="/NewsDetail/FileUrl"></xsl:value-of>
 												</xsl:attribute>
